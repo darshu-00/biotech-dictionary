@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/Users/dell/Downloads/Decoding%20Biotechnology%20Words.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Decoding Biotechnology Words</title>
+<style>
+:root{
+  --blue:#0b3d91; --blue2:#1565c0; --green:#1b9e6b; --green2:#34c98e;
+  --bg:#f2f9f7; --card:#ffffff; --text:#0d1b2a; --muted:#5a6b78; --border:#dbe9e4;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --bg:#08131a; --card:#0f2130; --text:#eaf3f1; --muted:#9fb3ad; --border:#1c3a3a; }
+}
+:root[data-theme="dark"]{ --bg:#08131a; --card:#0f2130; --text:#eaf3f1; --muted:#9fb3ad; --border:#1c3a3a; }
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+*{box-sizing:border-box;}
+body{margin:0;background-color:var(--bg);color:var(--text);font-family:'Segoe UI',Inter,system-ui,-apple-system,Roboto,sans-serif;line-height:1.5;
+  background-image:radial-gradient(circle at 1px 1px, rgba(27,158,107,.10) 1.4px, transparent 0), radial-gradient(circle at 1px 1px, rgba(11,61,145,.08) 1.4px, transparent 0);
+  background-size:26px 26px, 26px 26px; background-position:0 0, 13px 13px;}
+a{color:inherit;}
+.hero{position:relative;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;opacity:.14;pointer-events:none;}
+.hero>*{position:relative;z-index:1;}
+header{position:sticky;top:0;z-index:10;background:linear-gradient(120deg,var(--blue),var(--green));padding:calc(14px + env(safe-area-inset-top,0px)) 16px 14px;color:#fff;}
+.nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center;max-width:1000px;margin:0 auto;}
+.brand{font-weight:800;font-size:1.1rem;letter-spacing:.3px;cursor:pointer;white-space:nowrap;}
+.navlinks{display:flex;gap:12px;flex-wrap:wrap;margin-left:auto;font-size:.92rem;}
+.navlinks span{cursor:pointer;opacity:.9;padding:4px 8px;border-radius:8px;}
+.navlinks span:hover{background:rgba(255,255,255,.15);}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 60px;}
+.hero{text-align:center;padding:38px 16px;border-radius:18px;background:radial-gradient(circle at 20% 20%,rgba(27,158,107,.18),transparent 60%),radial-gradient(circle at 80% 0%,rgba(11,61,145,.18),transparent 55%),var(--card);border:1px solid var(--border);}
+.hero h1{font-size:1.7rem;margin:0 0 8px;background:linear-gradient(90deg,var(--blue),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent;}
+.hero p{color:var(--muted);margin:0 0 20px;}
+.searchbar{display:flex;max-width:480px;margin:0 auto;border:2px solid var(--green);border-radius:999px;overflow:hidden;background:var(--card);}
+.searchbar input{flex:1;border:0;padding:12px 16px;background:transparent;color:var(--text);font-size:1rem;outline:none;}
+.searchbar button{border:0;background:var(--green);color:#fff;padding:0 20px;cursor:pointer;font-weight:600;}
+.wod{margin-top:18px;font-size:.85rem;color:var(--muted);}
+.wod b{color:var(--green2);cursor:pointer;}
+h2.section{font-size:1.15rem;margin:34px 0 14px;color:var(--blue2);}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;cursor:pointer;transition:transform .15s;}
+.card:hover{transform:translateY(-3px);border-color:var(--green2);}
+.card .ic{font-size:1.8rem;}
+.card h3{margin:8px 0 4px;font-size:1rem;}
+.card p{margin:0;color:var(--muted);font-size:.82rem;}
+.pill{display:inline-block;font-size:.68rem;padding:2px 8px;border-radius:999px;background:var(--border);color:var(--muted);margin-top:6px;}
+.pill.basic{background:#d7f3e3;color:#146c43;}
+.pill.intermediate{background:#fff0c2;color:#8a6300;}
+.pill.advance{background:#ffd9d9;color:#a11d1d;}
+:root[data-theme="dark"] .pill.basic,.pill.basic{background:#123a26;color:#6fe3a4;}
+.wordrow{display:flex;justify-content:space-between;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 16px;margin-bottom:10px;cursor:pointer;}
+.wordrow:hover{border-color:var(--green2);}
+.backlink{display:inline-block;margin-bottom:16px;color:var(--green2);cursor:pointer;font-size:.9rem;}
+.wordpage h1{margin:0 0 4px;font-size:1.6rem;}
+.tag{font-size:.75rem;color:var(--muted);}
+.box{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px 18px;margin:14px 0;}
+.box h4{margin:0 0 6px;color:var(--blue2);font-size:.95rem;}
+.imgplaceholder{width:100%;max-width:320px;aspect-ratio:4/3;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--green));display:flex;align-items:center;justify-content:center;font-size:3rem;color:#fff;margin:10px 0;}
+.videolinks a{display:inline-block;margin:4px 8px 0 0;padding:6px 12px;border-radius:999px;background:var(--border);font-size:.82rem;text-decoration:none;color:var(--text);}
+.videolinks a:hover{background:var(--green2);color:#fff;}
+select,button.btn{padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.9rem;}
+button.btn.primary{background:var(--green);color:#fff;border:none;cursor:pointer;font-weight:600;}
+.comparetbl{width:100%;border-collapse:collapse;margin-top:14px;}
+.comparetbl th,.comparetbl td{border:1px solid var(--border);padding:10px;text-align:left;font-size:.88rem;vertical-align:top;}
+.comparetbl th{background:var(--border);}
+.quizq{margin-bottom:8px;font-weight:600;}
+.quizopt{display:block;width:100%;text-align:left;padding:10px 12px;margin:6px 0;border-radius:10px;border:1px solid var(--border);background:var(--card);cursor:pointer;color:var(--text);}
+.quizopt.correct{background:#1b9e6b;color:#fff;border-color:#1b9e6b;}
+.quizopt.wrong{background:#c0392b;color:#fff;border-color:#c0392b;}
+form.feedback label{display:block;margin:12px 0 4px;font-size:.85rem;color:var(--muted);}
+form.feedback input,form.feedback textarea{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:.9rem;}
+.note{font-size:.8rem;color:var(--muted);margin-top:10px;}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:30px 16px calc(30px + env(safe-area-inset-bottom,0px));}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand" onclick="go('home')">🧬 Biotech Words</div>
+    <div class="navlinks">
+      <span onclick="go('categories')">Categories</span>
+      <span onclick="go('atoz')">A-Z Index</span>
+      <span onclick="go('sources')">Trusted Sources</span>
+      <span onclick="go('compare')">Compare</span>
+      <span onclick="go('quiz')">Quiz</span>
+      <span onclick="go('contact')">Contact</span>
+      <span onclick="toggleTheme()">🌓</span>
+    </div>
+  </div>
+</header>
+<main id="app">
+  <div class="hero">
+    <svg class="hero-bg" viewBox="0 0 800 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 Q50,20 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100" stroke="var(--blue)" stroke-width="3" fill="none"></path>
+      <path d="M0,100 Q50,180 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100" stroke="var(--green)" stroke-width="3" fill="none"></path>
+      <line x1="25" y1="65" x2="25" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="75" y1="135" x2="75" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="125" y1="65" x2="125" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="175" y1="135" x2="175" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="225" y1="65" x2="225" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="275" y1="135" x2="275" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="325" y1="65" x2="325" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="375" y1="135" x2="375" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="425" y1="65" x2="425" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="475" y1="135" x2="475" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="525" y1="65" x2="525" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="575" y1="135" x2="575" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="625" y1="65" x2="625" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="675" y1="135" x2="675" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="725" y1="65" x2="725" y2="135" stroke="var(--muted)" stroke-width="2" opacity=".6"></line><line x1="775" y1="135" x2="775" y2="65" stroke="var(--muted)" stroke-width="2" opacity=".6"></line>
+    </svg>
+    <h1>DECODING OF BIOTECHNOLOGY WORDS</h1>
+    <p>Explore the life-related words in simple language. No biology background needed.</p>
+    <div class="searchbar">
+      <input id="searchInput" placeholder="Search biotechnology words..." onkeydown="if(event.key==='Enter')doSearch()">
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <div class="wod">🌟 Word of the day: <b onclick="go('word/antibiotic')">Antibiotic</b> — A medicine that kills or stops the growth of bacteria.</div>
+  </div>
+  <h2 class="section">Categories</h2>
+  <div class="grid">
+    <div class="card" onclick="go('category/dna-rna')">
+      <div class="ic">🧬</div><h3>DNA &amp; RNA</h3><p>Molecules that store and use genetic information.</p>
+      <span class="pill">14 words</span>
+    </div><div class="card" onclick="go('category/genetics')">
+      <div class="ic">🧑‍🔬</div><h3>Genetics</h3><p>How traits pass from parents to offspring.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/cell-biology')">
+      <div class="ic">🔬</div><h3>Cell Biology</h3><p>Structure and working of the cell, the unit of life.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/genetic-engineering')">
+      <div class="ic">✂️</div><h3>Genetic Engineering</h3><p>Tools used to read, copy, and edit genes.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/molecular-biology')">
+      <div class="ic">🧫</div><h3>Molecular Biology</h3><p>How molecules like proteins and enzymes make life work.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/bioinformatics')">
+      <div class="ic">💻</div><h3>Bioinformatics</h3><p>Using computers to study and organise biological data.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/genomics')">
+      <div class="ic">🗺️</div><h3>Genomics</h3><p>The study of an organism's complete set of DNA (its genome).</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/human-biology')">
+      <div class="ic">🧑</div><h3>Human Biology</h3><p>How the human body is built and works.</p>
+      <span class="pill">13 words</span>
+    </div><div class="card" onclick="go('category/microbiology')">
+      <div class="ic">🦠</div><h3>Microbiology</h3><p>The study of bacteria, viruses, and other microbes.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/immunology')">
+      <div class="ic">🛡️</div><h3>Immunology</h3><p>How the body defends itself against disease.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/biochemistry')">
+      <div class="ic">⚗️</div><h3>Biochemistry</h3><p>The chemical processes and substances inside living things.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/agricultural-biotechnology')">
+      <div class="ic">🌾</div><h3>Agricultural Biotechnology</h3><p>Using biotech to improve crops and farm animals.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/synthetic-biology')">
+      <div class="ic">🧪</div><h3>Synthetic Biology</h3><p>Designing new biological parts and systems.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/virology')">
+      <div class="ic">🧫</div><h3>Virology</h3><p>The study of viruses and how they infect hosts.</p>
+      <span class="pill">12 words</span>
+    </div><div class="card" onclick="go('category/diagnosis')">
+      <div class="ic">🩺</div><h3>Diagnosis &amp; Testing</h3><p>How doctors and labs find out what disease someone has.</p>
+      <span class="pill">9 words</span>
+    </div>
+  </div>
+  <h2 class="section">Try these too</h2>
+  <div class="grid">
+    <div class="card" onclick="go('compare')"><div class="ic">⚖️</div><h3>Compare Terms</h3><p>e.g. DNA vs RNA</p></div>
+    <div class="card" onclick="go('quiz')"><div class="ic">📝</div><h3>Take a Quiz</h3><p>Test what you've learned</p></div>
+    <div class="card" onclick="go('contact')"><div class="ic">✉️</div><h3>Suggest a Word</h3><p>Don't understand a term? Ask us.</p></div>
+  </div></main>
+<footer>Decoding Biotechnology Words — a learning dictionary for students.</footer>
+<script>
+const CATS = [
+ {id:'dna-rna',name:'DNA & RNA',icon:'🧬',desc:'Molecules that store and use genetic information.'},
+ {id:'genetics',name:'Genetics',icon:'🧑‍🔬',desc:'How traits pass from parents to offspring.'},
+ {id:'cell-biology',name:'Cell Biology',icon:'🔬',desc:'Structure and working of the cell, the unit of life.'},
+ {id:'genetic-engineering',name:'Genetic Engineering',icon:'✂️',desc:'Tools used to read, copy, and edit genes.'},
+ {id:'molecular-biology',name:'Molecular Biology',icon:'🧫',desc:'How molecules like proteins and enzymes make life work.'},
+ {id:'bioinformatics',name:'Bioinformatics',icon:'💻',desc:'Using computers to study and organise biological data.'},
+ {id:'genomics',name:'Genomics',icon:'🗺️',desc:'The study of an organism\'s complete set of DNA (its genome).'},
+ {id:'human-biology',name:'Human Biology',icon:'🧑',desc:'How the human body is built and works.'},
+ {id:'microbiology',name:'Microbiology',icon:'🦠',desc:'The study of bacteria, viruses, and other microbes.'},
+ {id:'immunology',name:'Immunology',icon:'🛡️',desc:'How the body defends itself against disease.'},
+ {id:'biochemistry',name:'Biochemistry',icon:'⚗️',desc:'The chemical processes and substances inside living things.'},
+ {id:'agricultural-biotechnology',name:'Agricultural Biotechnology',icon:'🌾',desc:'Using biotech to improve crops and farm animals.'},
+ {id:'synthetic-biology',name:'Synthetic Biology',icon:'🧪',desc:'Designing new biological parts and systems.'},
+ {id:'virology',name:'Virology',icon:'🧫',desc:'The study of viruses and how they infect hosts.'},
+ {id:'diagnosis',name:'Diagnosis & Testing',icon:'🩺',desc:'How doctors and labs find out what disease someone has.'},
+];
+
+const WORDS = [
+ {id:'dna',cat:'dna-rna',name:'DNA',hi:'डीएनए',mr:'डीएनए',diff:'basic',
+  simple:"A twisted-ladder shaped molecule that stores the instructions for building and running a living thing.",
+  scientific:"Deoxyribonucleic acid — a double-helix polymer of nucleotides (A,T,G,C) that encodes genetic information.",
+  example:"Your DNA decides traits like eye colour and blood group.",
+  real:"Used in DNA fingerprinting for crime investigation, paternity tests, and ancestry testing.",
+  related:['rna','gene','chromosome']},
+ {id:'rna',cat:'dna-rna',name:'RNA',hi:'आरएनए',mr:'आरएनए',diff:'basic',
+  simple:"A single-strand molecule that carries copied messages from DNA and helps make proteins.",
+  scientific:"Ribonucleic acid — a single-stranded nucleic acid (A,U,G,C) that carries out DNA's instructions, e.g. as mRNA, tRNA, rRNA.",
+  example:"mRNA carries the recipe for a protein from the nucleus to the ribosome.",
+  real:"mRNA vaccines (like some COVID-19 vaccines) use RNA to teach cells to make a harmless viral protein.",
+  related:['dna','transcription','translation']},
+ {id:'transcription',cat:'dna-rna',name:'Transcription',hi:'प्रतिलेखन',mr:'लिप्यंतरण',diff:'intermediate',
+  simple:"Copying a gene's DNA message into a matching RNA message.",
+  scientific:"The synthesis of messenger RNA from a DNA template, carried out by the enzyme RNA polymerase, occurring in the nucleus.",
+  example:"Before a protein is made, its gene is transcribed into mRNA.",
+  real:"Understanding transcription helps scientists design drugs that switch specific genes on or off.",
+  related:['dna','rna','translation']},
+ {id:'translation',cat:'dna-rna',name:'Translation',hi:'भाषांतरण',mr:'भाषांतर',diff:'intermediate',
+  simple:"Reading the RNA message at the ribosome to build a protein.",
+  scientific:"The process by which ribosomes read mRNA codons and assemble amino acids into a polypeptide chain (protein).",
+  example:"Translation turns the mRNA copy of a gene into an actual working protein.",
+  real:"Some antibiotics work by blocking translation in bacterial ribosomes, stopping bacteria from growing.",
+  related:['transcription','rna']},
+ {id:'gene',cat:'genetics',name:'Gene',hi:'जीन',mr:'जनुक',diff:'basic',
+  simple:"A short section of DNA that carries the instructions for one trait or protein.",
+  scientific:"A segment of DNA that serves as the basic unit of heredity, coding for a specific protein or functional RNA.",
+  example:"A gene on chromosome 15 influences eye colour.",
+  real:"Genetic testing looks at specific genes to check disease risk.",
+  related:['dna','chromosome','heredity']},
+ {id:'chromosome',cat:'genetics',name:'Chromosome',hi:'गुणसूत्र',mr:'गुणसूत्र',diff:'basic',
+  simple:"A tightly packed, thread-like structure made of DNA that carries many genes.",
+  scientific:"A thread-like structure of tightly coiled DNA and protein (chromatin) found in the nucleus; humans have 23 pairs.",
+  example:"Humans have 46 chromosomes in most body cells.",
+  real:"Counting chromosomes helps detect conditions such as Down syndrome (an extra chromosome 21).",
+  related:['gene','dna']},
+ {id:'heredity',cat:'genetics',name:'Heredity',hi:'आनुवंशिकता',mr:'आनुवंशिकता',diff:'basic',
+  simple:"The passing of traits from parents to their children.",
+  scientific:"The biological process by which genetic information is transmitted from parent to offspring through genes.",
+  example:"Heredity explains why children often resemble their parents.",
+  real:"Plant and animal breeders use heredity to select for useful traits like disease resistance.",
+  related:['gene','chromosome']},
+ {id:'cell',cat:'cell-biology',name:'Cell',hi:'कोशिका',mr:'पेशी',diff:'basic',
+  simple:"The smallest working unit of a living thing; all living things are made of one or more cells.",
+  scientific:"The basic structural, functional, and biological unit of all known living organisms, bounded by a membrane.",
+  example:"The human body is made of trillions of cells.",
+  real:"Stem cells (special cells) are studied to repair damaged tissue in medicine.",
+  related:['mitosis','organelle']},
+ {id:'mitosis',cat:'cell-biology',name:'Mitosis',hi:'समसूत्री विभाजन',mr:'समविभाजन',diff:'intermediate',
+  simple:"The way a cell splits into two identical cells for growth and repair.",
+  scientific:"A type of cell division that produces two genetically identical daughter cells from one parent cell.",
+  example:"Mitosis lets a cut on your skin heal by producing new skin cells.",
+  real:"Cancer involves cells that divide by mitosis uncontrollably.",
+  related:['cell']},
+ {id:'organelle',cat:'cell-biology',name:'Organelle',hi:'कोशिकांग',mr:'पेशीअंग',diff:'basic',
+  simple:"A small structure inside a cell that does a specific job, like a tiny organ.",
+  scientific:"A specialized subunit within a cell (e.g. nucleus, mitochondria) that performs a distinct function.",
+  example:"Mitochondria are organelles that produce energy for the cell.",
+  real:"Mitochondrial DNA (from an organelle) is used in ancestry and forensic testing.",
+  related:['cell']},
+ {id:'crispr',cat:'genetic-engineering',name:'CRISPR',hi:'क्रिस्पर',mr:'क्रिस्पर',diff:'advance',
+  simple:"A tool that lets scientists cut and edit DNA at an exact spot, like molecular scissors.",
+  scientific:"A gene-editing technology using a guide RNA and the Cas9 enzyme to make precise cuts in DNA for editing genes.",
+  example:"CRISPR is being tested to correct the faulty gene that causes sickle-cell disease.",
+  real:"Used in agriculture to create crops resistant to disease and drought.",
+  related:['dna','gene']},
+ {id:'pcr',cat:'genetic-engineering',name:'PCR',hi:'पीसीआर',mr:'पीसीआर',diff:'intermediate',
+  simple:"A technique that makes millions of copies of a small piece of DNA so it can be studied.",
+  scientific:"Polymerase Chain Reaction — a method to amplify a specific DNA segment exponentially using heat cycles and DNA polymerase.",
+  example:"PCR tests were widely used to detect COVID-19 infection.",
+  real:"Used in crime labs to amplify tiny DNA samples found at a crime scene.",
+  related:['dna']},
+ {id:'cloning',cat:'genetic-engineering',name:'Cloning',hi:'क्लोनिंग',mr:'क्लोनिंग',diff:'advance',
+  simple:"Making an exact genetic copy of a cell, gene, or organism.",
+  scientific:"The process of producing genetically identical copies of a DNA segment, cell, or organism through biological techniques.",
+  example:"Dolly the sheep was the first mammal cloned from an adult cell.",
+  real:"Cloning techniques help mass-produce insulin-making bacteria for diabetes treatment.",
+  related:['dna','crispr']},
+ {id:'protein',cat:'molecular-biology',name:'Protein',hi:'प्रोटीन',mr:'प्रथिन',diff:'basic',
+  simple:"A large molecule made of amino acids that does most of the work inside a cell.",
+  scientific:"A macromolecule composed of one or more chains of amino acids folded into a specific 3D shape to perform a function.",
+  example:"Keratin is a protein that makes up your hair and nails.",
+  real:"Proteins like insulin are manufactured using genetically engineered bacteria to treat diabetes.",
+  related:['amino-acid','enzyme','translation']},
+ {id:'enzyme',cat:'molecular-biology',name:'Enzyme',hi:'एंजाइम',mr:'एंझाइम',diff:'intermediate',
+  simple:"A special protein that speeds up chemical reactions in the body.",
+  scientific:"A biological catalyst, usually a protein, that increases the rate of a specific biochemical reaction without being consumed.",
+  example:"The enzyme amylase in your saliva starts breaking down starch as you chew.",
+  real:"Enzymes are used in detergents to break down stains, and in cheese-making.",
+  related:['protein']},
+ {id:'amino-acid',cat:'molecular-biology',name:'Amino Acid',hi:'अमीनो अम्ल',mr:'अमिनो आम्ल',diff:'basic',
+  simple:"A small building-block molecule that links together in chains to form proteins.",
+  scientific:"An organic compound containing an amino group and a carboxyl group; the monomer unit of proteins, of which there are 20 standard types.",
+  example:"Your body links amino acids together, in an order set by your genes, to build proteins.",
+  real:"Some amino acid supplements are used by athletes to support muscle repair.",
+  related:['protein','translation']},
+ {id:'sequence-alignment',cat:'bioinformatics',name:'Sequence Alignment',hi:'अनुक्रम संरेखण',mr:'अनुक्रम संरेखण',diff:'advance',
+  simple:"Lining up two DNA, RNA, or protein sequences to see how similar they are.",
+  scientific:"A computational method of arranging DNA, RNA, or protein sequences to identify regions of similarity that may indicate function or evolutionary relationships.",
+  example:"Scientists align a new virus's genome with known viruses to see how closely related it is.",
+  real:"Used to trace how a new flu strain evolved from earlier strains.",
+  related:['genome','dna']},
+ {id:'blast',cat:'bioinformatics',name:'BLAST',hi:'ब्लास्ट (BLAST)',mr:'ब्लास्ट (BLAST)',diff:'advance',
+  simple:"A free online tool that searches huge DNA databases to find sequences similar to yours.",
+  scientific:"Basic Local Alignment Search Tool — software that compares a query DNA or protein sequence against sequence databases to find regions of local similarity.",
+  example:"A researcher pastes an unknown gene sequence into BLAST to identify what organism it may be from.",
+  real:"Used daily by biologists worldwide to identify genes and check research results.",
+  related:['sequence-alignment','genome-database']},
+ {id:'genome-database',cat:'bioinformatics',name:'Genome Database',hi:'जीनोम डेटाबेस',mr:'जीनोम डेटाबेस',diff:'intermediate',
+  simple:"A large online collection storing the genetic sequences of many living things.",
+  scientific:"A structured, searchable repository (e.g. GenBank, Ensembl) storing genome sequences and annotations for organisms.",
+  example:"GenBank stores the DNA sequences submitted by researchers around the world.",
+  real:"Doctors use genome databases to compare a patient's DNA against known disease-linked variants.",
+  related:['genome','blast']},
+ {id:'genome',cat:'genomics',name:'Genome',hi:'जीनोम',mr:'जीनोम',diff:'basic',
+  simple:"The complete set of DNA (all the genes and other DNA) in a living thing.",
+  scientific:"The entire hereditary information of an organism encoded in its DNA, including all of its genes and non-coding sequences.",
+  example:"The Human Genome Project mapped out all of the roughly 20,000 genes in a human genome.",
+  real:"Genome sequencing helps identify inherited disease risks and guide personalised medicine.",
+  related:['dna','genome-sequencing','gene']},
+ {id:'genome-sequencing',cat:'genomics',name:'Genome Sequencing',hi:'जीनोम अनुक्रमण',mr:'जीनोम अनुक्रमण',diff:'advance',
+  simple:"Reading out the exact order of all the letters (A,T,G,C) in an organism's DNA.",
+  scientific:"The laboratory process of determining the complete DNA sequence of an organism's genome using sequencing technologies.",
+  example:"Whole-genome sequencing of a patient can reveal genetic mutations linked to disease.",
+  real:"Used to track how viruses like COVID-19 mutate over time.",
+  related:['genome','dna']},
+ {id:'snp',cat:'genomics',name:'SNP (Genetic Variation)',hi:'एकल न्यूक्लियोटाइड बहुरूपता',mr:'एकल न्यूक्लिओटाइड बहुरूपता',diff:'advance',
+  simple:"A tiny difference of just one DNA letter between people, which makes each of us a little different.",
+  scientific:"Single Nucleotide Polymorphism — a variation at a single position in a DNA sequence among individuals, the most common type of genetic variation.",
+  example:"A single SNP can affect whether a medicine works well for a particular person.",
+  real:"SNP analysis is used in ancestry-testing kits and in personalised medicine.",
+  related:['genome','dna']},
+ {id:'hormone',cat:'human-biology',name:'Hormone',hi:'हार्मोन',mr:'हार्मोन',diff:'basic',
+  simple:"A chemical messenger made by the body that travels in the blood to tell organs what to do.",
+  scientific:"A signalling molecule produced by glands of the endocrine system that regulates physiology and behaviour via the bloodstream.",
+  example:"Insulin is a hormone that controls blood sugar levels.",
+  real:"Synthetic insulin, made through genetic engineering, is injected by people with diabetes.",
+  related:['protein']},
+ {id:'immune-system',cat:'human-biology',name:'Immune System',hi:'प्रतिरक्षा तंत्र',mr:'रोगप्रतिकारक शक्ती',diff:'intermediate',
+  simple:"The body's defence system that fights off germs and infections.",
+  scientific:"A network of cells, tissues, and organs (e.g. white blood cells, lymph nodes) that work together to defend the body against pathogens.",
+  example:"Your immune system produces antibodies after a vaccine to protect you from a disease.",
+  real:"mRNA vaccines train the immune system to recognise a virus without causing the disease.",
+  related:['rna']},
+ {id:'metabolism',cat:'human-biology',name:'Metabolism',hi:'उपापचय',mr:'चयापचय',diff:'intermediate',
+  simple:"All the chemical processes in the body that turn food into energy and building blocks.",
+  scientific:"The sum of all biochemical reactions within an organism that convert nutrients into energy and cellular components.",
+  example:"A faster metabolism burns more calories at rest.",
+  real:"Enzyme-related metabolic disorders (like lactose intolerance) are studied to design better diets and drugs.",
+  related:['enzyme']},
+ {id:'bacteria',cat:'microbiology',name:'Bacteria',hi:'जीवाणु',mr:'जीवाणू',diff:'basic',
+  simple:"Tiny single-celled living things found almost everywhere — some help us, some make us sick.",
+  scientific:"Prokaryotic, single-celled microorganisms lacking a membrane-bound nucleus, found in nearly every habitat on Earth.",
+  example:"E. coli bacteria live harmlessly in your gut and help digest food.",
+  real:"Engineered bacteria are used to produce insulin and antibiotics in factories.",
+  related:['pcr','enzyme']},
+ {id:'virus',cat:'microbiology',name:'Virus',hi:'विषाणु',mr:'विषाणू',diff:'basic',
+  simple:"A tiny particle that can only multiply by infecting a living cell.",
+  scientific:"A microscopic infectious agent consisting of genetic material (DNA or RNA) in a protein coat, unable to reproduce outside a host cell.",
+  example:"The flu virus infects cells in your nose and throat.",
+  real:"Studying viruses helps scientists design vaccines and antiviral drugs.",
+  related:['viral-genome','vaccine']},
+ {id:'antibody',cat:'immunology',name:'Antibody',hi:'प्रतिरक्षी',mr:'प्रतिपिंड',diff:'intermediate',
+  simple:"A Y-shaped protein made by the body to recognise and stick to a specific germ.",
+  scientific:"A protein produced by B-cells of the immune system that specifically binds to an antigen to help neutralise or mark it for destruction.",
+  example:"After a vaccine, your blood carries antibodies against that specific disease.",
+  real:"Antibody tests can show whether someone was previously infected with a virus.",
+  related:['immune-system','vaccine','protein']},
+ {id:'vaccine',cat:'immunology',name:'Vaccine',hi:'टीका',mr:'लस',diff:'basic',
+  simple:"A safe substance given to the body to teach the immune system to fight a specific disease.",
+  scientific:"A biological preparation that stimulates adaptive immunity against a specific pathogen by exposing the immune system to a harmless form of it or its parts.",
+  example:"The measles vaccine trains your body to recognise the measles virus.",
+  real:"mRNA vaccine technology was rapidly used to fight COVID-19.",
+  related:['antibody','immune-system','rna']},
+ {id:'metabolite',cat:'biochemistry',name:'Metabolite',hi:'उपापचयज',mr:'चयापचयज',diff:'intermediate',
+  simple:"A small molecule made or used when the body processes food and energy.",
+  scientific:"A substance produced or consumed during metabolism, such as an intermediate or end product of enzymatic reactions.",
+  example:"Lactic acid is a metabolite produced in muscles during intense exercise.",
+  real:"Doctors test blood metabolites to check organ function and diagnose disorders.",
+  related:['enzyme','metabolism']},
+ {id:'substrate',cat:'biochemistry',name:'Substrate',hi:'क्रियाधार',mr:'क्रियाधार',diff:'intermediate',
+  simple:"The substance that an enzyme acts on and changes.",
+  scientific:"The specific molecule upon which an enzyme acts, binding to the enzyme's active site to be converted into product.",
+  example:"Starch is the substrate that the enzyme amylase breaks down into sugars.",
+  real:"Industries choose enzymes based on the substrate they need to break down, e.g. fats in detergents.",
+  related:['enzyme']},
+ {id:'gmo',cat:'agricultural-biotechnology',name:'GMO',hi:'जीएमओ (आनुवंशिक रूपांतरित जीव)',mr:'जीएमओ (आनुवंशिक सुधारित जीव)',diff:'intermediate',
+  simple:"A living thing whose genes have been changed on purpose using biotechnology.",
+  scientific:"Genetically Modified Organism — an organism whose genetic material has been altered using genetic engineering techniques not occurring naturally.",
+  example:"Bt cotton is a GMO crop engineered to resist certain insect pests.",
+  real:"GMO crops are used worldwide to increase yield and reduce pesticide use.",
+  related:['crispr','transgenic-crop']},
+ {id:'transgenic-crop',cat:'agricultural-biotechnology',name:'Transgenic Crop',hi:'पारजीनी फसल',mr:'पारजनुकीय पीक',diff:'advance',
+  simple:"A crop plant that has had a gene from another species added to it.",
+  scientific:"A crop plant into whose genome a gene from a different species has been artificially inserted to confer a new trait.",
+  example:"Golden Rice is a transgenic crop engineered to produce vitamin A.",
+  real:"Transgenic crops help farmers grow food in drought- or pest-prone regions.",
+  related:['gmo','crispr']},
+ {id:'biosensor',cat:'synthetic-biology',name:'Biosensor',hi:'जैवसंवेदक',mr:'जैवसंवेदक',diff:'advance',
+  simple:"A device that uses living material, like an enzyme or cell, to detect a substance.",
+  scientific:"An analytical device that combines a biological sensing element (enzyme, antibody, cell) with a transducer to detect and signal the presence of a target substance.",
+  example:"A glucose biosensor in a diabetic's glucometer detects blood sugar levels.",
+  real:"Biosensors are used to quickly detect contaminants in food and water.",
+  related:['enzyme']},
+ {id:'synthetic-gene',cat:'synthetic-biology',name:'Synthetic Gene',hi:'संश्लेषित जीन',mr:'संश्लेषित जनुक',diff:'advance',
+  simple:"A gene that is designed and built in a lab rather than taken from nature.",
+  scientific:"A gene sequence artificially designed and chemically synthesised in the laboratory, often to introduce a new function into an organism.",
+  example:"Scientists built a synthetic gene to make yeast produce a malaria drug ingredient.",
+  real:"Synthetic genes are used to engineer microbes that produce biofuels.",
+  related:['gene','crispr']},
+ {id:'viral-genome',cat:'virology',name:'Viral Genome',hi:'विषाणु जीनोम',mr:'विषाणू जीनोम',diff:'advance',
+  simple:"The complete set of genetic instructions packed inside a virus.",
+  scientific:"The full complement of genetic material (DNA or RNA) contained within a virus particle, encoding the proteins it needs to replicate.",
+  example:"Sequencing a viral genome helps scientists track new coronavirus variants.",
+  real:"Viral genome sequencing guides the design of updated vaccines each year.",
+  related:['genome-sequencing','virus']},
+ {id:'bacteriophage',cat:'virology',name:'Bacteriophage',hi:'जीवाणुभोजी',mr:'जीवाणुभक्षी',diff:'advance',
+  simple:"A virus that infects and destroys bacteria, not human or animal cells.",
+  scientific:"A virus that specifically infects and replicates within bacterial cells, often used as a tool in molecular biology.",
+  example:"Bacteriophages are being studied as an alternative to antibiotics for treating infections.",
+  real:"Phage therapy is used experimentally to treat antibiotic-resistant bacterial infections.",
+  related:['virus','bacteria']},
+ {id:'nucleotide',cat:'dna-rna',name:'Nucleotide',hi:'न्यूक्लियोटाइड',mr:'न्यूक्लिओटाइड',diff:'basic',
+  simple:"The small building-block unit that links up in long chains to form DNA and RNA.",
+  scientific:"The monomer unit of nucleic acids, made of a sugar, a phosphate group, and a nitrogenous base (A, T/U, G, or C).",
+  example:"Millions of nucleotides link together to form one strand of your DNA.",
+  real:"DNA sequencing machines read the order of nucleotides to reveal genetic information.",
+  related:['dna','rna']},
+ {id:'genetic-code',cat:'dna-rna',name:'Genetic Code',hi:'आनुवंशिक कूट',mr:'आनुवंशिक कोड',diff:'intermediate',
+  simple:"The set of rules that tells the cell which 3-letter DNA/RNA code stands for which amino acid.",
+  scientific:"The set of rules by which sequences of three nucleotides (codons) in mRNA are translated into specific amino acids during protein synthesis.",
+  example:"The codon AUG signals 'start' when building a protein.",
+  real:"Understanding the genetic code lets scientists predict what protein a gene will produce.",
+  related:['translation','rna']},
+ {id:'allele',cat:'genetics',name:'Allele',hi:'एलील',mr:'ॲलील',diff:'intermediate',
+  simple:"One of two or more different versions of the same gene.",
+  scientific:"An alternative form of a gene that arises by mutation and occupies the same locus on a chromosome.",
+  example:"One allele for eye colour may code for brown, another for blue.",
+  real:"Doctors check which alleles a person carries to assess risk of inherited diseases.",
+  related:['gene','heredity']},
+ {id:'mutation',cat:'genetics',name:'Mutation',hi:'उत्परिवर्तन',mr:'उत्परिवर्तन',diff:'intermediate',
+  simple:"A change in a DNA sequence, which can happen naturally or be caused by outside factors.",
+  scientific:"A permanent alteration in the DNA sequence, which may be inherited or acquired, and can affect gene function.",
+  example:"A mutation in a single gene can cause sickle-cell disease.",
+  real:"Tracking mutations helps scientists monitor how viruses like flu evolve each year.",
+  related:['gene','dna']},
+ {id:'nucleus',cat:'cell-biology',name:'Nucleus',hi:'केंद्रक',mr:'केंद्रक',diff:'basic',
+  simple:"The control-centre organelle of a cell, where the DNA is stored.",
+  scientific:"A membrane-bound organelle in eukaryotic cells that houses the cell's chromosomal DNA and controls gene expression.",
+  example:"The nucleus keeps the cell's DNA safe and separate from the rest of the cell.",
+  real:"Cloning techniques like the one used for Dolly the sheep involve transferring a nucleus into an egg cell.",
+  related:['cell','dna']},
+ {id:'ribosome',cat:'cell-biology',name:'Ribosome',hi:'राइबोसोम',mr:'रायबोझोम',diff:'intermediate',
+  simple:"A tiny cell structure that reads RNA and builds proteins.",
+  scientific:"A complex of RNA and protein found in all cells that carries out translation, assembling amino acids into proteins.",
+  example:"Ribosomes float in the cytoplasm or attach to the endoplasmic reticulum to make proteins.",
+  real:"Certain antibiotics work by jamming bacterial ribosomes without harming human ones.",
+  related:['translation','protein']},
+ {id:'gene-therapy',cat:'genetic-engineering',name:'Gene Therapy',hi:'जीन चिकित्सा',mr:'जनुक उपचार',diff:'advance',
+  simple:"A medical treatment that fixes or replaces a faulty gene to treat a disease.",
+  scientific:"A therapeutic technique that introduces, removes, or alters genetic material within a patient's cells to treat or prevent disease.",
+  example:"Gene therapy has been used to treat some inherited forms of blindness.",
+  real:"Gene therapies are now approved to treat certain blood disorders like beta-thalassemia.",
+  related:['crispr','gene']},
+ {id:'vector-genetic',cat:'genetic-engineering',name:'Vector (Gene Carrier)',hi:'वाहक (जीन वाहक)',mr:'वाहक (जनुक वाहक)',diff:'advance',
+  simple:"A tool, often a virus or a ring of DNA, used to carry a new gene into a cell.",
+  scientific:"A DNA molecule, such as a plasmid or modified virus, used as a vehicle to artificially carry genetic material into a cell.",
+  example:"Scientists use a harmless virus as a vector to deliver a healthy gene in gene therapy.",
+  real:"Viral vectors were used to deliver instructions in some COVID-19 vaccines.",
+  related:['gene-therapy','crispr']},
+ {id:'peptide-bond',cat:'molecular-biology',name:'Peptide Bond',hi:'पेप्टाइड बंध',mr:'पेप्टाइड बंध',diff:'advance',
+  simple:"The chemical link that joins two amino acids together in a protein chain.",
+  scientific:"A covalent bond formed between the carboxyl group of one amino acid and the amino group of another, linking them into a polypeptide.",
+  example:"A chain of amino acids joined by peptide bonds folds up to form a protein.",
+  real:"Understanding peptide bonds helps chemists design peptide-based drugs.",
+  related:['amino-acid','protein']},
+ {id:'denaturation',cat:'molecular-biology',name:'Denaturation',hi:'विकृतीकरण',mr:'विकृतीकरण',diff:'advance',
+  simple:"When heat or chemicals cause a protein or DNA to lose its normal shape and stop working properly.",
+  scientific:"The process by which a protein or nucleic acid loses its native folded structure due to heat, pH, or chemical disruption of bonds, usually losing function.",
+  example:"Frying an egg denatures its proteins, turning it from clear to white.",
+  real:"PCR uses heat-driven denaturation to separate DNA strands before copying them.",
+  related:['protein','pcr']},
+ {id:'fasta-format',cat:'bioinformatics',name:'FASTA Format',hi:'फास्टा फॉरमॅट',mr:'फास्टा फॉरमॅट',diff:'advance',
+  simple:"A simple text format scientists use to write and share DNA, RNA, or protein sequences.",
+  scientific:"A text-based file format that represents nucleotide or amino acid sequences, in which each sequence begins with a single-line description marked by '>'.",
+  example:"A researcher downloads a gene's sequence in FASTA format to run a BLAST search.",
+  real:"Nearly all genome databases let you export sequences in FASTA format.",
+  related:['blast','sequence-alignment']},
+ {id:'phylogenetic-tree',cat:'bioinformatics',name:'Phylogenetic Tree',hi:'वंशवृक्ष (जातिवृत्त)',mr:'वंशवृक्ष (जातिवृत्त)',diff:'advance',
+  simple:"A branching diagram that shows how different species or genes are related through evolution.",
+  scientific:"A diagram depicting the inferred evolutionary relationships among biological species or genes based on similarities and differences in their sequences.",
+  example:"A phylogenetic tree can show how closely a new virus variant is related to earlier ones.",
+  real:"Used during outbreaks to trace how a pathogen spread and evolved.",
+  related:['sequence-alignment','genome']},
+ {id:'reference-genome',cat:'genomics',name:'Reference Genome',hi:'संदर्भ जीनोम',mr:'संदर्भ जीनोम',diff:'advance',
+  simple:"A standard, well-mapped genome that scientists compare other genomes against.",
+  scientific:"A digitally assembled representative DNA sequence for a species, used as a standard against which new sequences are compared and mapped.",
+  example:"A patient's genome is compared to the human reference genome to spot differences.",
+  real:"The Human Reference Genome is the baseline used in most human genetic research.",
+  related:['genome','genome-sequencing']},
+ {id:'genotype',cat:'genomics',name:'Genotype',hi:'जीनोटाइप',mr:'जनुकप्रकार',diff:'intermediate',
+  simple:"The specific set of genes (or DNA code) an organism has for a trait.",
+  scientific:"The genetic makeup of an organism, specifically the set of alleles it carries, as distinguished from its observable traits (phenotype).",
+  example:"Two people can have a different genotype for eye colour but a similar looking phenotype.",
+  real:"Genotyping is used in personalised medicine to predict a patient's response to a drug.",
+  related:['allele','gene']},
+ {id:'homeostasis',cat:'human-biology',name:'Homeostasis',hi:'समस्थैतिकता',mr:'समस्थिती',diff:'intermediate',
+  simple:"The body's ability to keep steady internal conditions, like temperature, no matter what's happening outside.",
+  scientific:"The physiological process by which an organism maintains a stable internal environment despite changes in external conditions.",
+  example:"Sweating helps your body maintain homeostasis by cooling you down.",
+  real:"Understanding homeostasis helps doctors treat conditions like diabetes, where blood sugar regulation fails.",
+  related:['hormone','metabolism']},
+ {id:'gene-expression',cat:'human-biology',name:'Gene Expression',hi:'जीन अभिव्यक्ति',mr:'जनुक अभिव्यक्ती',diff:'advance',
+  simple:"The process of a gene being 'turned on' and used to make something, like a protein.",
+  scientific:"The process by which information from a gene is used to synthesise a functional product, typically a protein, via transcription and translation.",
+  example:"Gene expression changes in skin cells when they're exposed to sunlight.",
+  real:"Cancer research often studies which genes show unusual expression in tumour cells.",
+  related:['transcription','translation']},
+ {id:'fungus',cat:'microbiology',name:'Fungus',hi:'कवक',mr:'बुरशी',diff:'basic',
+  simple:"A living thing, like yeast or mushrooms, that gets food by absorbing it rather than making or eating it.",
+  scientific:"A eukaryotic microorganism or multicellular organism belonging to kingdom Fungi, which obtains nutrients through absorption.",
+  example:"The yeast used to bake bread is a single-celled fungus.",
+  real:"Engineered yeast (a fungus) is used to brew insulin and other biotech products.",
+  related:['bacteria']},
+ {id:'microbiome',cat:'microbiology',name:'Microbiome',hi:'सूक्ष्मजीवोम',mr:'सूक्ष्मजीवोम',diff:'intermediate',
+  simple:"The whole community of tiny microbes, like bacteria, living in or on a body.",
+  scientific:"The collective genomes and community of microorganisms (bacteria, fungi, viruses) inhabiting a particular environment, such as the human gut.",
+  example:"Your gut microbiome helps digest food and supports your immune system.",
+  real:"Scientists study the microbiome to develop probiotics and new treatments for gut disorders.",
+  related:['bacteria']},
+ {id:'antigen',cat:'immunology',name:'Antigen',hi:'प्रतिजन',mr:'प्रतिजन',diff:'intermediate',
+  simple:"Any substance that the immune system recognises as foreign and reacts against.",
+  scientific:"A molecule, often on a pathogen's surface, capable of triggering an immune response and being specifically bound by an antibody.",
+  example:"Rapid COVID-19 tests detect a viral antigen in a nasal swab.",
+  real:"Vaccines work by exposing the body to a harmless antigen to build future protection.",
+  related:['antibody','immune-system']},
+ {id:'autoimmune-disease',cat:'immunology',name:'Autoimmune Disease',hi:'स्वप्रतिरक्षित रोग',mr:'स्वयंप्रतिकार रोग',diff:'advance',
+  simple:"A condition where the immune system mistakenly attacks the body's own healthy cells.",
+  scientific:"A disease resulting from an inappropriate immune response in which the body's immune system attacks its own tissues.",
+  example:"Type 1 diabetes is an autoimmune disease where the immune system attacks insulin-producing cells.",
+  real:"Biotechnology-derived drugs, called biologics, are used to treat autoimmune diseases like rheumatoid arthritis.",
+  related:['immune-system','antibody']},
+ {id:'lipid',cat:'biochemistry',name:'Lipid',hi:'वसा (लिपिड)',mr:'मेद (लिपिड)',diff:'basic',
+  simple:"A fat-like molecule that stores energy and forms the outer covering of cells.",
+  scientific:"A diverse group of hydrophobic organic molecules including fats, oils, and phospholipids that store energy and form biological membranes.",
+  example:"The membrane surrounding every cell is made mainly of lipids.",
+  real:"Lipid nanoparticles are used to deliver mRNA vaccines safely into cells.",
+  related:['protein']},
+ {id:'carbohydrate',cat:'biochemistry',name:'Carbohydrate',hi:'कर्बोदके',mr:'कर्बोदके',diff:'basic',
+  simple:"A sugar or starch molecule that living things use mainly as a source of energy.",
+  scientific:"An organic compound made of carbon, hydrogen, and oxygen (e.g. sugars, starches) that serves as a primary energy source and structural component.",
+  example:"Glucose, a simple carbohydrate, is the main fuel your cells burn for energy.",
+  real:"Industrial biotechnology uses enzymes to convert plant carbohydrates into biofuels.",
+  related:['enzyme','metabolite']},
+ {id:'tissue-culture',cat:'agricultural-biotechnology',name:'Tissue Culture',hi:'ऊतक संवर्धन',mr:'उती संवर्धन',diff:'intermediate',
+  simple:"Growing many new identical plants from a tiny piece of plant tissue in a lab dish.",
+  scientific:"A technique for growing cells, tissues, or organs in a sterile, nutrient-rich medium under controlled conditions, often to clone plants.",
+  example:"Banana farmers use tissue culture to quickly grow thousands of disease-free plantlets.",
+  real:"Tissue culture is widely used to mass-produce healthy, uniform crop seedlings.",
+  related:['cloning']},
+ {id:'marker-assisted-selection',cat:'agricultural-biotechnology',name:'Marker-Assisted Selection',hi:'मार्कर-सहाय्यित निवड',mr:'मार्कर-सहाय्यित निवड',diff:'advance',
+  simple:"Using a DNA 'marker' to quickly pick young plants or animals with a desired trait, without waiting for them to grow up.",
+  scientific:"A breeding method that uses DNA markers linked to a trait of interest to select individuals carrying desirable genes at an early stage.",
+  example:"Breeders use marker-assisted selection to develop rice varieties that resist flooding.",
+  real:"Speeds up traditional breeding programs from many years to just a few generations.",
+  related:['snp','gmo']},
+ {id:'genetic-circuit',cat:'synthetic-biology',name:'Genetic Circuit',hi:'आनुवंशिक परिपथ',mr:'आनुवंशिक परिपथ',diff:'advance',
+  simple:"A set of genes designed to work together like an electronic circuit, switching each other on or off.",
+  scientific:"An engineered network of interacting genetic parts (promoters, genes, regulators) designed to perform a specific logical function inside a cell.",
+  example:"A genetic circuit can be designed to make a bacterium glow only when it detects a toxin.",
+  real:"Genetic circuits are being developed to create living sensors for pollution and disease.",
+  related:['synthetic-gene','biosensor']},
+ {id:'chassis-organism',cat:'synthetic-biology',name:'Chassis Organism',hi:'चेसिस जीव',mr:'चेसिस जीव',diff:'advance',
+  simple:"A simple, well-understood organism, like a bacterium, used as the base for building new biological systems.",
+  scientific:"A host organism, often with a simplified or well-characterised genome, used as the platform to host engineered genetic circuits or pathways.",
+  example:"E. coli is a common chassis organism used to produce engineered proteins.",
+  real:"Chassis organisms are engineered to mass-produce medicines like insulin cheaply.",
+  related:['genetic-circuit','bacteria']},
+ {id:'viral-vector',cat:'virology',name:'Viral Vector',hi:'विषाणु वाहक',mr:'विषाणू वाहक',diff:'advance',
+  simple:"A virus that has been modified so it can safely deliver genetic material into cells instead of causing disease.",
+  scientific:"A virus engineered to be non-pathogenic and used as a delivery vehicle to introduce genetic material into target cells.",
+  example:"Some COVID-19 vaccines used a modified, harmless virus as a viral vector.",
+  real:"Viral vectors are a key tool in both vaccine development and gene therapy.",
+  related:['vector-genetic','vaccine']},
+ {id:'retrovirus',cat:'virology',name:'Retrovirus',hi:'रेट्रोव्हायरस',mr:'रेट्रोव्हायरस',diff:'advance',
+  simple:"A type of virus that copies its RNA into DNA and inserts it into the host cell's own DNA.",
+  scientific:"A type of RNA virus that uses the enzyme reverse transcriptase to convert its RNA genome into DNA, which integrates into the host cell's genome.",
+  example:"HIV is a well-known retrovirus that inserts its genetic material into human immune cells.",
+  real:"Modified retroviruses are used as tools in gene therapy to deliver corrective genes.",
+  related:['viral-genome','vector-genetic']},
+ {id:'codon',cat:'dna-rna',name:'Codon',hi:'कोडॉन',mr:'कोडॉन',diff:'intermediate',
+  simple:"A group of three DNA or RNA letters that stands for one amino acid, like a 3-letter word in the genetic code.",
+  scientific:"A sequence of three nucleotides in mRNA that specifies a particular amino acid or a stop signal during translation.",
+  example:"The codon UUU tells the ribosome to add the amino acid phenylalanine.",
+  real:"Scientists redesign codons in lab-made genes to make proteins more efficiently in bacteria.",
+  related:['genetic-code','translation']},
+ {id:'base-pair',cat:'dna-rna',name:'Base Pair',hi:'क्षारक युग्म',mr:'क्षारक जोडी',diff:'basic',
+  simple:"Two matching DNA letters (A-T or G-C) that join across the two strands of the DNA ladder.",
+  scientific:"Two complementary nitrogenous bases (adenine-thymine or guanine-cytosine) joined by hydrogen bonds, forming the rungs of the DNA double helix.",
+  example:"The human genome has about 3 billion base pairs.",
+  real:"Genome size is measured in base pairs, e.g. 'a 4.6 million base pair bacterial genome.'",
+  related:['dna','nucleotide']},
+ {id:'dominant-allele',cat:'genetics',name:'Dominant Allele',hi:'प्रभावी एलील',mr:'प्रभावी ॲलील',diff:'intermediate',
+  simple:"A gene version whose trait shows up even if only one copy is present.",
+  scientific:"An allele that produces its associated phenotype even when present in a single copy (heterozygous), masking the effect of a recessive allele.",
+  example:"Brown eye colour is often caused by a dominant allele.",
+  real:"Understanding dominant alleles helps predict the chance of a child inheriting a genetic disorder.",
+  related:['allele','heredity']},
+ {id:'genetic-disorder',cat:'genetics',name:'Genetic Disorder',hi:'आनुवंशिक विकार',mr:'आनुवंशिक विकार',diff:'intermediate',
+  simple:"A health condition caused by a change or fault in a person's genes or chromosomes.",
+  scientific:"A disease caused wholly or partly by an abnormality in an individual's genome, such as a gene mutation or chromosomal change.",
+  example:"Cystic fibrosis is a genetic disorder caused by mutations in a single gene.",
+  real:"Genetic testing and gene therapy are both used to detect and treat genetic disorders.",
+  related:['mutation','gene-therapy']},
+ {id:'mitochondria',cat:'cell-biology',name:'Mitochondria',hi:'तंतुकणिका (माइटोकॉन्ड्रिया)',mr:'तंतुकणिका (मायटोकाँड्रिया)',diff:'basic',
+  simple:"The organelle that produces energy for the cell — often called the cell's powerhouse.",
+  scientific:"A double-membraned organelle that generates most of a cell's ATP through cellular respiration, and contains its own small DNA genome.",
+  example:"Muscle cells have lots of mitochondria because they need a lot of energy.",
+  real:"Mitochondrial DNA, passed only from mother to child, is used in ancestry and forensic testing.",
+  related:['cell','organelle']},
+ {id:'cell-membrane',cat:'cell-biology',name:'Cell Membrane',hi:'कोशिका पटल',mr:'पेशी आवरण',diff:'basic',
+  simple:"The thin outer covering that holds a cell together and controls what goes in and out.",
+  scientific:"A selectively permeable phospholipid bilayer that encloses the cell, regulating the movement of substances in and out.",
+  example:"Nutrients and waste pass through the cell membrane in a controlled way.",
+  real:"Lipid nanoparticles in mRNA vaccines are designed to fuse with the cell membrane to deliver their cargo.",
+  related:['cell','lipid']},
+ {id:'recombinant-dna',cat:'genetic-engineering',name:'Recombinant DNA',hi:'पुनर्संयोजी डीएनए',mr:'पुनर्संयोजी डीएनए',diff:'advance',
+  simple:"DNA made by joining together genetic material from two different sources.",
+  scientific:"DNA formed by artificially combining genetic material from different sources, typically using restriction enzymes and ligase, to create new genetic combinations.",
+  example:"Recombinant DNA technology was first used to produce human insulin in bacteria in the 1970s.",
+  real:"Most biotech medicines today, from insulin to growth hormone, are made using recombinant DNA.",
+  related:['plasmid','crispr']},
+ {id:'plasmid',cat:'genetic-engineering',name:'Plasmid',hi:'प्लाज्मिड',mr:'प्लाझमिड',diff:'advance',
+  simple:"A small, circular piece of DNA, separate from the main DNA, often used to carry new genes into bacteria.",
+  scientific:"A small, circular, extrachromosomal DNA molecule found in bacteria, commonly used in genetic engineering as a vector to carry and express foreign genes.",
+  example:"Scientists insert the human insulin gene into a bacterial plasmid to mass-produce insulin.",
+  real:"Plasmids are one of the most widely used tools for producing recombinant proteins.",
+  related:['recombinant-dna','vector-genetic']},
+ {id:'polymerase',cat:'molecular-biology',name:'Polymerase',hi:'पॉलिमरेज',mr:'पॉलिमरेज',diff:'intermediate',
+  simple:"An enzyme that builds new strands of DNA or RNA by linking nucleotides together.",
+  scientific:"An enzyme that synthesises long chains of nucleic acids (DNA or RNA) by adding nucleotides to a growing strand using a template.",
+  example:"DNA polymerase copies your DNA every time a cell divides.",
+  real:"Taq polymerase, from a heat-loving bacterium, is the key enzyme that makes PCR possible.",
+  related:['pcr','dna']},
+ {id:'protein-folding',cat:'molecular-biology',name:'Protein Folding',hi:'प्रथिन घडी',mr:'प्रथिन घडी',diff:'advance',
+  simple:"The way a long chain of amino acids twists and folds into its final, working 3D shape.",
+  scientific:"The physical process by which a linear polypeptide chain acquires its functional three-dimensional structure, driven by interactions between amino acids.",
+  example:"A protein must fold correctly to do its job; misfolded proteins can cause disease.",
+  real:"AI tools like AlphaFold now predict protein folding, speeding up drug and vaccine design.",
+  related:['protein','peptide-bond']},
+ {id:'orf',cat:'bioinformatics',name:'Open Reading Frame (ORF)',hi:'ओपन रीडिंग फ्रेम',mr:'ओपन रीडिंग फ्रेम',diff:'advance',
+  simple:"A stretch of DNA that could potentially be read to build a protein, starting with a 'start' code and ending with a 'stop' code.",
+  scientific:"A continuous stretch of codons in a DNA sequence that begins with a start codon and ends with a stop codon, indicating a potential protein-coding region.",
+  example:"Bioinformatics tools scan a new genome for open reading frames to predict where genes might be.",
+  real:"Finding ORFs is often the first step in identifying genes in a newly sequenced genome.",
+  related:['codon','genome-sequencing']},
+ {id:'genome-annotation',cat:'bioinformatics',name:'Genome Annotation',hi:'जीनोम भाष्यांकन',mr:'जीनोम भाष्यांकन',diff:'advance',
+  simple:"The process of labelling a genome to show where the genes and other important parts are.",
+  scientific:"The process of identifying and labelling the locations and functions of genes and other features within a sequenced genome.",
+  example:"After sequencing a new species' genome, researchers annotate it to find where each gene lies.",
+  real:"Genome annotation helped scientists quickly identify potential drug targets in the SARS-CoV-2 genome.",
+  related:['orf','genome']},
+ {id:'exome',cat:'genomics',name:'Exome',hi:'एक्सोम',mr:'एक्सोम',diff:'advance',
+  simple:"The small part of the genome that actually contains the instructions for making proteins.",
+  scientific:"The complete set of exons in the genome — the protein-coding regions — which make up only about 1-2% of the human genome.",
+  example:"Exome sequencing is often used instead of whole-genome sequencing because it's faster and cheaper.",
+  real:"Exome sequencing is widely used in clinics to diagnose suspected genetic diseases in children.",
+  related:['genome','genome-sequencing']},
+ {id:'epigenome',cat:'genomics',name:'Epigenome',hi:'एपिजीनोम',mr:'एपिजीनोम',diff:'advance',
+  simple:"A set of chemical 'tags' on top of DNA that turn genes on or off without changing the DNA sequence itself.",
+  scientific:"The complete set of chemical modifications (such as DNA methylation) to an organism's DNA and histones that regulate gene expression without altering the DNA sequence.",
+  example:"Identical twins can have a different epigenome, which is one reason they can develop differently over time.",
+  real:"Epigenome changes are studied to understand how diet, stress, and environment affect gene activity.",
+  related:['gene-expression','genome']},
+ {id:'nervous-system',cat:'human-biology',name:'Nervous System',hi:'तंत्रिका तंत्र',mr:'चेतासंस्था',diff:'basic',
+  simple:"The body's communication network of nerves and the brain that sends signals around the body.",
+  scientific:"The network of nerve cells (neurons) and the brain and spinal cord that transmits electrical and chemical signals to coordinate body functions.",
+  example:"Your nervous system lets you instantly pull your hand away from something hot.",
+  real:"Biotech-derived proteins are being researched as treatments for nervous system diseases like ALS.",
+  related:['homeostasis']},
+ {id:'circulatory-system',cat:'human-biology',name:'Circulatory System',hi:'रक्ताभिसरण तंत्र',mr:'रक्ताभिसरण संस्था',diff:'basic',
+  simple:"The system of the heart and blood vessels that moves blood, oxygen, and nutrients around the body.",
+  scientific:"The organ system, comprising the heart, blood, and blood vessels, responsible for transporting oxygen, nutrients, hormones, and waste throughout the body.",
+  example:"The heart pumps blood through the circulatory system to every part of your body.",
+  real:"Bioengineered blood vessels and heart valves are being developed to treat circulatory diseases.",
+  related:['hormone','homeostasis']},
+ {id:'pathogen',cat:'microbiology',name:'Pathogen',hi:'रोगजनक',mr:'रोगकारक',diff:'basic',
+  simple:"Any germ, like a bacterium or virus, that can cause disease.",
+  scientific:"Any microorganism, such as a bacterium, virus, fungus, or parasite, capable of causing disease in its host.",
+  example:"Salmonella is a pathogen that can cause food poisoning.",
+  real:"Rapid pathogen identification tools help doctors choose the right treatment faster.",
+  related:['bacteria','virus']},
+ {id:'sterilization',cat:'microbiology',name:'Sterilization',hi:'निर्जंतुकीकरण',mr:'निर्जंतुकीकरण',diff:'basic',
+  simple:"Completely killing or removing all microbes from an object or area.",
+  scientific:"A process that eliminates or destroys all forms of microbial life, including bacterial spores, from a surface or substance.",
+  example:"Surgical instruments must be sterilized before an operation to prevent infection.",
+  real:"Sterilization techniques are essential in labs to keep cell and bacterial cultures free from contamination.",
+  related:['bacteria','pathogen']},
+ {id:'lymphocyte',cat:'immunology',name:'Lymphocyte',hi:'लसीकाणु',mr:'लसिकापेशी',diff:'advance',
+  simple:"A type of white blood cell that helps the body recognise and fight specific germs.",
+  scientific:"A type of white blood cell, including B-cells and T-cells, that is central to the adaptive immune response, recognising and responding to specific antigens.",
+  example:"B-lymphocytes are the cells that produce antibodies.",
+  real:"CAR-T cancer therapy involves genetically engineering a patient's own lymphocytes to attack tumour cells.",
+  related:['antibody','immune-system']},
+ {id:'inflammation',cat:'immunology',name:'Inflammation',hi:'शोथ (सूज)',mr:'दाह (सूज)',diff:'basic',
+  simple:"The body's response of redness, heat, and swelling when it's fighting an injury or infection.",
+  scientific:"A protective immune response involving increased blood flow, immune cell recruitment, and chemical signalling in response to injury, infection, or irritation.",
+  example:"A swollen, red cut on your finger is showing signs of inflammation as it heals.",
+  real:"Many biotech drugs, called biologics, are designed to reduce harmful chronic inflammation in diseases like arthritis.",
+  related:['immune-system','antigen']},
+ {id:'cofactor',cat:'biochemistry',name:'Cofactor',hi:'सहकारक',mr:'सहघटक',diff:'advance',
+  simple:"A helper molecule, often a metal ion or vitamin, that an enzyme needs to do its job properly.",
+  scientific:"A non-protein chemical compound or metallic ion required for an enzyme's biological activity, binding to the enzyme to enable catalysis.",
+  example:"Many enzymes need a zinc or iron cofactor to function correctly.",
+  real:"Vitamin deficiencies can cause disease because vitamins often act as essential enzyme cofactors.",
+  related:['enzyme','substrate']},
+ {id:'catalysis',cat:'biochemistry',name:'Catalysis',hi:'उत्प्रेरण',mr:'उत्प्रेरण',diff:'intermediate',
+  simple:"Speeding up a chemical reaction without being used up in the process.",
+  scientific:"The process of increasing the rate of a chemical reaction by means of a catalyst, such as an enzyme, without the catalyst itself being consumed.",
+  example:"Enzyme catalysis lets your body digest food in minutes instead of years.",
+  real:"Industrial biotechnology relies on enzyme catalysis to manufacture products like biofuels and detergents cheaply.",
+  related:['enzyme','cofactor']},
+ {id:'biofortification',cat:'agricultural-biotechnology',name:'Biofortification',hi:'जैवसंपन्नीकरण',mr:'जैवसंपन्नीकरण',diff:'advance',
+  simple:"Breeding or engineering crops to naturally contain more vitamins or minerals.",
+  scientific:"The process of increasing the density of vitamins and minerals in a crop through conventional breeding, agronomic practices, or genetic engineering.",
+  example:"Golden Rice is a biofortified crop engineered to contain vitamin A.",
+  real:"Biofortified crops are being used to fight micronutrient deficiencies in developing countries.",
+  related:['transgenic-crop','gmo']},
+ {id:'hybrid-seed',cat:'agricultural-biotechnology',name:'Hybrid Seed',hi:'संकरित बियाणे',mr:'संकरित बियाणे',diff:'basic',
+  simple:"Seed produced by crossing two different parent plant varieties to get a stronger or higher-yielding plant.",
+  scientific:"Seed produced by cross-pollinating two genetically distinct parent lines, often resulting in offspring with superior traits (hybrid vigour).",
+  example:"Many high-yield maize and rice varieties grown by farmers today are hybrid seeds.",
+  real:"Hybrid seeds have significantly boosted crop yields worldwide since the mid-20th century.",
+  related:['tissue-culture','gmo']},
+ {id:'promoter',cat:'synthetic-biology',name:'Promoter (Genetic)',hi:'प्रवर्तक (जनुकीय)',mr:'प्रवर्तक (जनुकीय)',diff:'advance',
+  simple:"A DNA 'switch' region that tells the cell where and when to start reading a gene.",
+  scientific:"A region of DNA located upstream of a gene that initiates and regulates its transcription by recruiting RNA polymerase.",
+  example:"Engineers attach a strong promoter to a gene so a cell produces more of that protein.",
+  real:"Choosing the right promoter is a key step in engineering bacteria to mass-produce a medicine.",
+  related:['genetic-circuit','transcription']},
+ {id:'directed-evolution',cat:'synthetic-biology',name:'Directed Evolution',hi:'निर्देशित उत्क्रांती',mr:'निर्देशित उत्क्रांती',diff:'advance',
+  simple:"A lab method that speeds up evolution to create better enzymes or proteins by testing many random changes.",
+  scientific:"A method of protein engineering that mimics natural selection by introducing random mutations and selecting variants with improved or new desired functions.",
+  example:"Directed evolution has been used to create enzymes that break down plastic waste faster.",
+  real:"The 2018 Nobel Prize in Chemistry was awarded for pioneering directed evolution techniques.",
+  related:['enzyme','synthetic-gene']},
+ {id:'host-cell',cat:'virology',name:'Host Cell',hi:'यजमान कोशिका',mr:'यजमान पेशी',diff:'basic',
+  simple:"The living cell that a virus invades and uses to make copies of itself.",
+  scientific:"A living cell that a virus infects and hijacks, using the cell's own machinery to replicate its genetic material and produce new viral particles.",
+  example:"A cold virus uses cells in your nose and throat as its host cells.",
+  real:"Understanding how viruses enter host cells helps scientists design antiviral drugs that block that step.",
+  related:['virus','viral-genome']},
+ {id:'viral-replication',cat:'virology',name:'Viral Replication',hi:'विषाणू प्रतिकृतीकरण',mr:'विषाणू प्रतिकृतीकरण',diff:'advance',
+  simple:"The process a virus uses to make many copies of itself inside a host cell.",
+  scientific:"The multi-step process by which a virus attaches to, enters, and hijacks a host cell's machinery to produce new copies of itself.",
+  example:"After entering a cell, a virus quickly begins viral replication, producing thousands of new virus particles.",
+  real:"Many antiviral drugs, like those for HIV, work by blocking a specific step of viral replication.",
+  related:['host-cell','virus']},
+ {id:'double-helix',cat:'dna-rna',name:'Double Helix',hi:'द्वि-कुंडलिनी',mr:'द्वि-कुंडलिनी',diff:'basic',
+  simple:"The twisted-ladder shape that two strands of DNA form together.",
+  scientific:"The structural shape of DNA in which two complementary polynucleotide strands wind around each other, held together by base pairing.",
+  example:"Watson and Crick famously described the double helix shape of DNA in 1953.",
+  real:"The double helix structure explains how DNA can be copied accurately every time a cell divides.",
+  related:['dna','base-pair']},
+ {id:'non-coding-dna',cat:'dna-rna',name:'Non-coding DNA',hi:'असंकेतक डीएनए',mr:'असंकेतक डीएनए',diff:'advance',
+  simple:"DNA that doesn't directly carry instructions for making a protein.",
+  scientific:"DNA sequences that do not encode protein sequences, some of which have regulatory or structural roles while others have no known function.",
+  example:"Most of the human genome is made up of non-coding DNA, not genes.",
+  real:"Some non-coding DNA regions are now known to control when nearby genes switch on or off.",
+  related:['dna','genome']},
+ {id:'recessive-allele',cat:'genetics',name:'Recessive Allele',hi:'अप्रभावी एलील',mr:'अप्रभावी ॲलील',diff:'intermediate',
+  simple:"A gene version whose trait only shows up if both copies a person has are this version.",
+  scientific:"An allele whose phenotypic effect is masked in the presence of a dominant allele, and is only expressed when present in two copies (homozygous).",
+  example:"Blue eye colour is often caused by a recessive allele, needing two copies to appear.",
+  real:"Many inherited disorders, like cystic fibrosis, are caused by recessive alleles from both parents.",
+  related:['dominant-allele','allele']},
+ {id:'genetic-diversity',cat:'genetics',name:'Genetic Diversity',hi:'आनुवंशिक विविधता',mr:'आनुवंशिक विविधता',diff:'intermediate',
+  simple:"The variety of different genes found within a group or species.",
+  scientific:"The total number of genetic characteristics and variation present within a species or population, arising from mutation and recombination.",
+  example:"High genetic diversity in a wild crop relative can help breed disease-resistant varieties.",
+  real:"Seed banks store diverse crop varieties to preserve genetic diversity for future breeding.",
+  related:['mutation','allele']},
+ {id:'endoplasmic-reticulum',cat:'cell-biology',name:'Endoplasmic Reticulum',hi:'अंतर्द्रव्यजालिका',mr:'अंतर्द्रव्यजालिका',diff:'advance',
+  simple:"A network of tunnels inside the cell that helps build and transport proteins and fats.",
+  scientific:"An organelle forming a network of membranous tubules within the cell, involved in protein synthesis and folding (rough ER) and lipid synthesis (smooth ER).",
+  example:"Ribosomes attached to the rough endoplasmic reticulum help build proteins destined to leave the cell.",
+  real:"Engineered cell lines with an enhanced ER are used to manufacture antibody drugs at scale.",
+  related:['ribosome','cell']},
+ {id:'cytoplasm',cat:'cell-biology',name:'Cytoplasm',hi:'कोशिकाद्रव्य',mr:'जीवद्रव्य',diff:'basic',
+  simple:"The jelly-like fluid inside a cell where most organelles float and many reactions happen.",
+  scientific:"The gel-like substance enclosed by the cell membrane, containing the organelles and the site of many metabolic reactions, excluding the nucleus.",
+  example:"Free-floating ribosomes in the cytoplasm make proteins used inside the cell itself.",
+  real:"Cytoplasmic extracts from cells are used in labs to study protein synthesis outside a living cell.",
+  related:['cell','nucleus']},
+ {id:'restriction-enzyme',cat:'genetic-engineering',name:'Restriction Enzyme',hi:'निर्बंधन एंजाइम',mr:'निर्बंधन एंझाइम',diff:'advance',
+  simple:"A protein 'molecular scissors' that cuts DNA at a specific sequence.",
+  scientific:"An enzyme that recognises and cuts DNA at specific short sequences, widely used as a tool to cut and splice DNA in genetic engineering.",
+  example:"Restriction enzymes are used to cut open a plasmid so a new gene can be inserted.",
+  real:"The discovery of restriction enzymes in the 1970s made modern genetic engineering possible.",
+  related:['plasmid','recombinant-dna']},
+ {id:'gene-knockout',cat:'genetic-engineering',name:'Gene Knockout',hi:'जीन नॉकआउट',mr:'जनुक नॉकआउट',diff:'advance',
+  simple:"Switching off or disabling a specific gene to study what it does.",
+  scientific:"A genetic engineering technique in which a specific gene is inactivated ('knocked out') to study its function by observing the resulting effects.",
+  example:"Researchers create knockout mice, missing one gene, to study that gene's role in disease.",
+  real:"Gene knockout studies have helped identify the function of thousands of human genes.",
+  related:['crispr','gene']},
+ {id:'chaperone-protein',cat:'molecular-biology',name:'Chaperone Protein',hi:'चापेरॉन प्रथिन',mr:'चापेरॉन प्रथिन',diff:'advance',
+  simple:"A helper protein that assists other proteins in folding into their correct shape.",
+  scientific:"A protein that assists the correct folding or assembly of other proteins, often protecting them from misfolding or aggregation, especially under stress.",
+  example:"Heat-shock chaperone proteins increase when a cell is exposed to high temperatures, protecting other proteins.",
+  real:"Chaperone proteins are studied for their role in diseases caused by protein misfolding, like Alzheimer's.",
+  related:['protein-folding','protein']},
+ {id:'post-translational-modification',cat:'molecular-biology',name:'Post-translational Modification',hi:'भाषांतरोत्तर सुधारणा',mr:'भाषांतरोत्तर सुधारणा',diff:'advance',
+  simple:"A chemical change made to a protein after it has been built, which can change how it works.",
+  scientific:"Chemical modifications made to a protein after translation, such as the addition of sugar or phosphate groups, that can alter its function, location, or stability.",
+  example:"Adding a phosphate group to a protein can switch its activity on or off.",
+  real:"Biotech drug manufacturers must carefully control post-translational modifications to ensure a protein drug works correctly.",
+  related:['protein','translation']},
+ {id:'next-gen-sequencing',cat:'bioinformatics',name:'Next-Generation Sequencing',hi:'नेक्स्ट-जनरेशन सिक्वेन्सिंग',mr:'नेक्स्ट-जनरेशन सिक्वेन्सिंग',diff:'advance',
+  simple:"Fast, modern technology that can read millions of pieces of DNA at the same time.",
+  scientific:"A high-throughput DNA sequencing technology that allows massively parallel sequencing of millions of DNA fragments simultaneously, at low cost.",
+  example:"Next-generation sequencing let scientists sequence the entire SARS-CoV-2 genome within days of the outbreak.",
+  real:"Hospitals increasingly use next-generation sequencing to diagnose rare genetic diseases quickly.",
+  related:['genome-sequencing','genome-database']},
+ {id:'transcriptome',cat:'bioinformatics',name:'Transcriptome',hi:'ट्रान्सक्रिप्टोम',mr:'ट्रान्सक्रिप्टोम',diff:'advance',
+  simple:"The complete set of all the RNA messages being made in a cell at a given moment.",
+  scientific:"The complete set of RNA transcripts, including mRNA, produced by the genome of a cell or tissue at a specific time, reflecting active gene expression.",
+  example:"Comparing the transcriptome of healthy and cancerous cells reveals which genes are abnormally active.",
+  real:"Transcriptome analysis helps researchers discover new drug targets by seeing which genes are switched on in disease.",
+  related:['gene-expression','rna']},
+ {id:'comparative-genomics',cat:'genomics',name:'Comparative Genomics',hi:'तुलनात्मक जीनोमिक्स',mr:'तुलनात्मक जीनोमिक्स',diff:'advance',
+  simple:"Comparing the genomes of different species to see what's similar and different between them.",
+  scientific:"The study of comparing the genome sequences of different species to understand evolutionary relationships, gene function, and shared biological pathways.",
+  example:"Comparative genomics shows that humans and chimpanzees share about 98-99% of their DNA.",
+  real:"Comparative genomics helps scientists identify genes linked to disease by studying similar genes in animal models.",
+  related:['genome','phylogenetic-tree']},
+ {id:'copy-number-variation',cat:'genomics',name:'Copy Number Variation',hi:'प्रत संख्या भिन्नता',mr:'प्रत संख्या तफावत',diff:'advance',
+  simple:"A difference in how many copies of a section of DNA a person has, compared to usual.",
+  scientific:"A structural genomic variation in which a segment of DNA is present in an abnormal number of copies compared to the reference genome.",
+  example:"Having an extra copy of a chromosome segment is a type of copy number variation.",
+  real:"Some copy number variations are linked to conditions such as autism and certain cancers.",
+  related:['reference-genome','mutation']},
+ {id:'endocrine-system',cat:'human-biology',name:'Endocrine System',hi:'अंतःस्रावी तंत्र',mr:'अंतःस्रावी संस्था',diff:'basic',
+  simple:"The system of glands in the body that release hormones into the blood.",
+  scientific:"The collection of glands that produce and secrete hormones directly into the bloodstream to regulate metabolism, growth, and other body functions.",
+  example:"The pancreas, part of the endocrine system, releases insulin to control blood sugar.",
+  real:"Biotech-manufactured hormones, like synthetic insulin, are used to treat endocrine system disorders.",
+  related:['hormone','homeostasis']},
+ {id:'stem-cell',cat:'human-biology',name:'Stem Cell',hi:'स्टेम कोशिका',mr:'स्टेम पेशी',diff:'intermediate',
+  simple:"A special, unspecialised cell that can turn into many different kinds of body cells.",
+  scientific:"An undifferentiated cell capable of both self-renewal and differentiation into specialised cell types, used to generate various tissues in the body.",
+  example:"Bone marrow stem cells can develop into red blood cells, white blood cells, or platelets.",
+  real:"Stem cell therapies are being researched to repair damaged heart tissue and treat blood cancers.",
+  related:['cell','gene-therapy']},
+ {id:'antibiotic',cat:'microbiology',name:'Antibiotic',hi:'प्रतिजैविक',mr:'प्रतिजैविक',diff:'basic',
+  simple:"A medicine that kills or stops the growth of bacteria.",
+  scientific:"A substance, often produced by a microorganism, that kills or inhibits the growth of bacteria, used to treat bacterial infections.",
+  example:"Penicillin was one of the first antibiotics discovered, from a mould.",
+  real:"Biotechnology is used to mass-produce antibiotics using engineered microbial fermentation.",
+  related:['bacteria','pathogen']},
+ {id:'antibiotic-resistance',cat:'microbiology',name:'Antibiotic Resistance',hi:'प्रतिजैविक प्रतिरोध',mr:'प्रतिजैविक प्रतिकार',diff:'intermediate',
+  simple:"When bacteria change so that a medicine that used to kill them no longer works.",
+  scientific:"The ability of bacteria to survive exposure to an antibiotic that would normally kill or inhibit them, usually arising through mutation or gene transfer.",
+  example:"Overusing antibiotics has led to the rise of antibiotic-resistant 'superbug' bacteria.",
+  real:"Scientists use genome sequencing to track how antibiotic resistance genes spread between bacteria.",
+  related:['antibiotic','bacteria']},
+ {id:'cytokine',cat:'immunology',name:'Cytokine',hi:'साइटोकाइन',mr:'सायटोकाइन',diff:'advance',
+  simple:"A small signalling protein that immune cells use to communicate with each other.",
+  scientific:"A small signalling protein secreted by immune cells that mediates and regulates immunity, inflammation, and cell communication.",
+  example:"Cytokines released during infection cause symptoms like fever as the body fights back.",
+  real:"Some biotech drugs, called cytokine therapies, are used to boost the immune system against cancer.",
+  related:['immune-system','inflammation']},
+ {id:'memory-cell',cat:'immunology',name:'Memory Cell',hi:'स्मृति कोशिका',mr:'स्मृती पेशी',diff:'intermediate',
+  simple:"A long-lived immune cell that 'remembers' a germ so the body can fight it off faster next time.",
+  scientific:"A subset of long-lived lymphocytes that persist after an infection or vaccination, enabling a faster and stronger immune response upon re-exposure to the same antigen.",
+  example:"Memory cells are why you usually only catch chickenpox once in your life.",
+  real:"Vaccines work by creating memory cells so the body responds quickly if it meets the real pathogen.",
+  related:['lymphocyte','vaccine']},
+ {id:'nucleic-acid',cat:'biochemistry',name:'Nucleic Acid',hi:'न्यूक्लिक आम्ल',mr:'न्यूक्लिक आम्ल',diff:'basic',
+  simple:"The family of large molecules, including DNA and RNA, that store and carry genetic information.",
+  scientific:"A biopolymer, either DNA or RNA, composed of nucleotide monomers, responsible for storing and transmitting genetic information in living organisms.",
+  example:"DNA and RNA are the two types of nucleic acid found in living cells.",
+  real:"Nucleic acid tests (like PCR) are widely used to detect infections by directly finding a pathogen's genetic material.",
+  related:['dna','rna']},
+ {id:'atp',cat:'biochemistry',name:'ATP',hi:'एटीपी',mr:'एटीपी',diff:'intermediate',
+  simple:"The molecule cells use as their main energy currency to power almost everything they do.",
+  scientific:"Adenosine Triphosphate — a nucleotide that serves as the primary energy carrier in cells, releasing energy when its phosphate bonds are broken.",
+  example:"Muscle cells constantly use and regenerate ATP to contract during exercise.",
+  real:"Mitochondria produce most of a cell's ATP through cellular respiration.",
+  related:['mitochondria','metabolite']},
+ {id:'bt-crop',cat:'agricultural-biotechnology',name:'Bt Crop',hi:'बीटी पीक',mr:'बीटी पीक',diff:'intermediate',
+  simple:"A crop engineered with a gene from a soil bacterium so it can produce its own natural insect-killing protein.",
+  scientific:"A genetically modified crop containing a gene from the bacterium Bacillus thuringiensis (Bt), enabling it to produce a protein toxic to specific insect pests.",
+  example:"Bt cotton produces a protein that kills bollworm caterpillars but is safe for humans.",
+  real:"Bt crops have reduced the need for chemical pesticide spraying on cotton and maize in many countries.",
+  related:['gmo','transgenic-crop']},
+ {id:'molecular-farming',cat:'agricultural-biotechnology',name:'Molecular Farming',hi:'आण्विक शेती',mr:'आण्विक शेती',diff:'advance',
+  simple:"Using genetically engineered plants or animals as living 'factories' to produce medicines.",
+  scientific:"The use of genetically engineered plants or animals to produce valuable pharmaceutical or industrial proteins, such as vaccines or antibodies.",
+  example:"Some tobacco plants have been engineered through molecular farming to produce an Ebola treatment protein.",
+  real:"Molecular farming is being explored as a cheaper way to produce vaccines at large scale.",
+  related:['transgenic-crop','protein']},
+ {id:'bioreactor',cat:'synthetic-biology',name:'Bioreactor',hi:'जैवभट्टी (बायोरिएक्टर)',mr:'जैवभट्टी (बायोरिॲक्टर)',diff:'intermediate',
+  simple:"A large tank where engineered cells or microbes are grown under controlled conditions to make a product.",
+  scientific:"A vessel or system that supports a biologically active environment, used to grow cells or microorganisms under controlled conditions for producing biotech products.",
+  example:"Insulin-producing bacteria are grown in huge bioreactors at pharmaceutical factories.",
+  real:"Bioreactors are used at industrial scale to brew everything from vaccines to plant-based meat proteins.",
+  related:['chassis-organism','bacteria']},
+ {id:'minimal-genome',cat:'synthetic-biology',name:'Minimal Genome',hi:'न्यूनतम जीनोम',mr:'किमान जीनोम',diff:'advance',
+  simple:"The smallest possible set of genes an organism needs to stay alive.",
+  scientific:"The smallest set of genes sufficient for an organism to survive and reproduce under specific laboratory conditions, often engineered by removing non-essential genes.",
+  example:"Scientists built a bacterium with a minimal genome containing only about 470 genes.",
+  real:"Minimal genome organisms are used as simplified chassis to build custom biological systems.",
+  related:['chassis-organism','genome']},
+ {id:'pandemic',cat:'virology',name:'Pandemic',hi:'महामारी',mr:'साथीचा रोग (महामारी)',diff:'basic',
+  simple:"An outbreak of a disease that spreads across many countries or continents, affecting a large number of people.",
+  scientific:"An epidemic of an infectious disease that has spread across a large region, such as multiple continents or worldwide, affecting a substantial population.",
+  example:"COVID-19 became a pandemic after spreading to countries across the world in 2020.",
+  real:"Biotechnology, including rapid vaccine and diagnostic development, plays a key role in pandemic response.",
+  related:['virus','vaccine']},
+ {id:'viral-mutation',cat:'virology',name:'Viral Mutation',hi:'विषाणू उत्परिवर्तन',mr:'विषाणू उत्परिवर्तन',diff:'intermediate',
+  simple:"A change in a virus's genetic code that happens as it copies itself, sometimes creating a new variant.",
+  scientific:"A change in the genetic sequence of a virus arising during replication, which can alter its properties such as transmissibility or ability to evade immunity.",
+  example:"Viral mutation is why new flu vaccines are needed almost every year.",
+  real:"Scientists track viral mutations in real time to update vaccines against emerging variants.",
+  related:['mutation','viral-replication']},
+ {id:'antisense-rna',cat:'dna-rna',name:'Antisense RNA',hi:'प्रतिसंवेदी आरएनए',mr:'प्रतिसंवेदी आरएनए',diff:'advance',
+  simple:"An RNA strand that binds to a matching mRNA and blocks it from being used to make a protein.",
+  scientific:"A single-stranded RNA complementary to a specific mRNA sequence, which binds to it and blocks its translation, effectively silencing that gene.",
+  example:"Antisense RNA can be used in the lab to switch off a specific gene's activity.",
+  real:"Antisense RNA drugs are approved to treat certain rare genetic muscle-wasting diseases.",
+  related:['rna','gene-expression']},
+ {id:'telomere',cat:'dna-rna',name:'Telomere',hi:'टिलोमियर',mr:'टिलोमियर',diff:'advance',
+  simple:"A protective cap at the end of a chromosome that stops it from fraying, like the tip of a shoelace.",
+  scientific:"A region of repetitive nucleotide sequences at each end of a chromosome that protects it from deterioration during cell division.",
+  example:"Telomeres get slightly shorter each time a cell divides, which is linked to ageing.",
+  real:"Telomere length is studied as a possible biomarker of biological ageing and disease risk.",
+  related:['chromosome','dna']},
+ {id:'gwas',cat:'genetics',name:'Genome-Wide Association Study (GWAS)',hi:'जीनोमव्यापी संबंध अभ्यास',mr:'जीनोमव्यापी संबंध अभ्यास',diff:'advance',
+  simple:"A large study that scans many people's genomes to find which genetic differences are linked to a trait or disease.",
+  scientific:"A research method that scans genome-wide sets of genetic variants in many individuals to identify variants statistically associated with a particular trait or disease.",
+  example:"A GWAS might reveal that a specific SNP is more common in people with type 2 diabetes.",
+  real:"GWAS results have helped identify genetic risk factors for diseases like heart disease and depression.",
+  related:['snp','genotype']},
+ {id:'karyotype',cat:'genetics',name:'Karyotype',hi:'कॅरिओटाइप',mr:'कॅरिओटाइप',diff:'intermediate',
+  simple:"A picture of all of a person's chromosomes, arranged and sorted by size and shape.",
+  scientific:"The complete set of an individual's chromosomes, visualised and arranged by size, number, and shape, typically from a microscope image.",
+  example:"A karyotype test can reveal an extra chromosome, as seen in Down syndrome.",
+  real:"Karyotyping is used before birth to screen for chromosomal abnormalities.",
+  related:['chromosome']},
+ {id:'golgi-apparatus',cat:'cell-biology',name:'Golgi Apparatus',hi:'गॉल्जी उपकरण',mr:'गॉल्जी उपकरण',diff:'advance',
+  simple:"The cell structure that packages and ships out proteins to where they're needed.",
+  scientific:"An organelle that modifies, sorts, and packages proteins and lipids received from the endoplasmic reticulum for secretion or delivery within the cell.",
+  example:"After a protein is made, the Golgi apparatus packages it into a vesicle for delivery.",
+  real:"Engineered cells used to manufacture antibody drugs rely on a healthy Golgi apparatus for correct protein packaging.",
+  related:['endoplasmic-reticulum','protein']},
+ {id:'cell-cycle',cat:'cell-biology',name:'Cell Cycle',hi:'कोशिका चक्र',mr:'पेशी चक्र',diff:'intermediate',
+  simple:"The repeating series of steps a cell goes through as it grows and divides into two.",
+  scientific:"The ordered sequence of events, including growth, DNA replication, and mitosis, that a cell undergoes to divide into two daughter cells.",
+  example:"A cell spends most of its time growing before entering mitosis, the division stage of the cell cycle.",
+  real:"Many cancer drugs work by disrupting the cell cycle of fast-dividing tumour cells.",
+  related:['mitosis','cell']},
+ {id:'gene-editing',cat:'genetic-engineering',name:'Gene Editing',hi:'जीन संपादन',mr:'जनुक संपादन',diff:'intermediate',
+  simple:"Precisely changing, adding, or removing a specific piece of DNA in a living cell.",
+  scientific:"A group of technologies, such as CRISPR-Cas9, that allow scientists to precisely add, remove, or alter DNA at specific locations in a genome.",
+  example:"Gene editing was used to create the first CRISPR-based approved therapy for sickle-cell disease.",
+  real:"Gene editing is being explored to make crops more resistant to climate change.",
+  related:['crispr','gene-knockout']},
+ {id:'selectable-marker',cat:'genetic-engineering',name:'Selectable Marker',hi:'निवडक चिन्हक',mr:'निवडक चिन्हक',diff:'advance',
+  simple:"A gene added alongside a new gene so scientists can easily tell which cells successfully took it up.",
+  scientific:"A gene introduced alongside a gene of interest that confers a selectable trait, such as antibiotic resistance, allowing identification of successfully modified cells.",
+  example:"An antibiotic-resistance gene is often used as a selectable marker in plasmid engineering.",
+  real:"Selectable markers help biotech labs quickly confirm which bacteria successfully took up an engineered plasmid.",
+  related:['plasmid','recombinant-dna']},
+ {id:'signal-transduction',cat:'molecular-biology',name:'Signal Transduction',hi:'संकेत रूपांतरण',mr:'संकेत रूपांतरण',diff:'advance',
+  simple:"The chain of steps inside a cell that turns an outside signal into an actual response.",
+  scientific:"The process by which a cell converts an extracellular signal, such as a hormone binding a receptor, into a specific intracellular response through a cascade of molecular events.",
+  example:"When insulin binds a cell's receptor, signal transduction tells the cell to absorb glucose from the blood.",
+  real:"Many cancer drugs target faulty signal transduction pathways that cause cells to divide uncontrollably.",
+  related:['hormone','protein']},
+ {id:'molecular-cloning',cat:'molecular-biology',name:'Molecular Cloning',hi:'आण्विक क्लोनिंग',mr:'आण्विक क्लोनिंग',diff:'advance',
+  simple:"Making many identical copies of a specific piece of DNA in the lab.",
+  scientific:"A set of laboratory methods used to assemble recombinant DNA molecules and produce multiple identical copies of a specific DNA fragment, typically using bacteria or PCR.",
+  example:"Molecular cloning is used to insert a gene of interest into a plasmid for study.",
+  real:"Molecular cloning is a routine first step in producing biotech drugs and research tools.",
+  related:['plasmid','recombinant-dna']},
+ {id:'variant-calling',cat:'bioinformatics',name:'Variant Calling',hi:'व्हेरियंट कॉलिंग',mr:'व्हेरियंट कॉलिंग',diff:'advance',
+  simple:"Using software to spot the exact places where a person's DNA differs from a reference genome.",
+  scientific:"The computational process of identifying genetic variants, such as SNPs or insertions/deletions, by comparing sequencing data against a reference genome.",
+  example:"Variant calling on a patient's exome data might reveal a mutation linked to a disease.",
+  real:"Variant calling pipelines are a core step in clinical genetic diagnosis today.",
+  related:['reference-genome','next-gen-sequencing']},
+ {id:'read-depth',cat:'bioinformatics',name:'Read Depth',hi:'रीड डेप्थ',mr:'रीड डेप्थ',diff:'advance',
+  simple:"How many times a particular piece of DNA was read during sequencing — more reads mean more confidence in the result.",
+  scientific:"The number of times a specific nucleotide is sequenced (read) in a sequencing experiment, used as a measure of data reliability at that position.",
+  example:"A read depth of 30x means that position in the genome was sequenced 30 separate times.",
+  real:"Clinical genome tests require a minimum read depth to confidently confirm a disease-linked mutation.",
+  related:['next-gen-sequencing','variant-calling']},
+ {id:'pangenome',cat:'genomics',name:'Pangenome',hi:'पॅनजीनोम',mr:'पॅनजीनोम',diff:'advance',
+  simple:"The full collection of all genes found across every member of a species, not just one individual.",
+  scientific:"The entire set of genes, including core genes shared by all individuals and accessory genes present in only some, across all members of a species.",
+  example:"A bacterial pangenome can be far larger than any single bacterium's own genome.",
+  real:"Pangenome studies help researchers understand why some strains of a bacterium are more dangerous than others.",
+  related:['genome','comparative-genomics']},
+ {id:'genomic-imprinting',cat:'genomics',name:'Genomic Imprinting',hi:'जीनोमिक इम्प्रिंटिंग',mr:'जीनोमिक इम्प्रिंटिंग',diff:'advance',
+  simple:"A special case where only the gene copy from one parent (mother or father) is switched on, not both.",
+  scientific:"An epigenetic phenomenon in which certain genes are expressed in a parent-of-origin-specific manner, with one copy silenced depending on whether it was inherited from the mother or father.",
+  example:"Genomic imprinting means some genes only work if they come from your father, and others only from your mother.",
+  real:"Errors in genomic imprinting are linked to conditions such as Prader-Willi syndrome.",
+  related:['epigenome','gene-expression']},
+ {id:'digestive-system',cat:'human-biology',name:'Digestive System',hi:'पचन संस्था',mr:'पचन संस्था',diff:'basic',
+  simple:"The group of organs that break down food into nutrients the body can use.",
+  scientific:"The system of organs, including the stomach and intestines, responsible for the mechanical and chemical breakdown of food into absorbable nutrients.",
+  example:"Enzymes in your digestive system break down starch into simple sugars.",
+  real:"Engineered digestive enzymes are used as supplements for people who can't digest certain foods, like lactose.",
+  related:['enzyme']},
+ {id:'reproductive-system',cat:'human-biology',name:'Reproductive System',hi:'जनन संस्था',mr:'जनन संस्था',diff:'basic',
+  simple:"The group of organs responsible for producing offspring.",
+  scientific:"The system of organs involved in sexual reproduction, responsible for the production of gametes and, in females, supporting pregnancy.",
+  example:"Fertility treatments work by supporting or assisting the reproductive system.",
+  real:"IVF (in-vitro fertilisation) is a well-known biotechnology used to assist human reproduction.",
+  related:['heredity']},
+ {id:'biofilm',cat:'microbiology',name:'Biofilm',hi:'जैवपटल',mr:'जैवपटल',diff:'intermediate',
+  simple:"A slimy layer formed when a community of microbes stick together on a surface.",
+  scientific:"A structured community of microorganisms enclosed in a self-produced protective matrix, adhering to a surface, which increases their resistance to antibiotics and disinfectants.",
+  example:"Dental plaque is a biofilm formed by bacteria on the surface of your teeth.",
+  real:"Biofilms on medical devices like catheters are a major cause of hospital infections, driving new anti-biofilm research.",
+  related:['bacteria','antibiotic-resistance']},
+ {id:'spore',cat:'microbiology',name:'Spore',hi:'बीजाणु',mr:'बीजाणू',diff:'basic',
+  simple:"A tough, dormant survival form some bacteria and fungi make to survive harsh conditions.",
+  scientific:"A tough, dormant, and resistant structure produced by some bacteria and fungi that allows survival under unfavourable environmental conditions until conditions improve.",
+  example:"Anthrax bacteria form spores that can survive in soil for decades.",
+  real:"Understanding spores is essential for designing effective sterilization methods in hospitals and labs.",
+  related:['bacteria','fungus','sterilization']},
+ {id:'innate-immunity',cat:'immunology',name:'Innate Immunity',hi:'सहजात प्रतिरक्षा',mr:'सहजात प्रतिकारशक्ती',diff:'intermediate',
+  simple:"The body's fast, general first line of defence against any germ, present from birth.",
+  scientific:"The immediate, non-specific line of immune defence present from birth, including physical barriers and general immune cells, that responds the same way to any pathogen.",
+  example:"Skin and stomach acid are part of your innate immunity, blocking germs before they cause infection.",
+  real:"Some new vaccine designs aim to boost innate immunity for broader, faster protection.",
+  related:['immune-system','adaptive-immunity']},
+ {id:'adaptive-immunity',cat:'immunology',name:'Adaptive Immunity',hi:'अनुकूलित प्रतिरक्षा',mr:'अनुकूलित प्रतिकारशक्ती',diff:'intermediate',
+  simple:"The body's slower but highly specific immune defence that learns to target one particular germ.",
+  scientific:"The specific, learned immune response mediated by B- and T-lymphocytes that targets a particular pathogen and creates lasting immunological memory.",
+  example:"Adaptive immunity is why you develop lifelong protection to a disease after catching it once.",
+  real:"Vaccines are designed specifically to trigger adaptive immunity and its memory cells.",
+  related:['innate-immunity','lymphocyte','memory-cell']},
+ {id:'biomolecule',cat:'biochemistry',name:'Biomolecule',hi:'जैवरेणू',mr:'जैवरेणू',diff:'basic',
+  simple:"Any molecule made by a living thing, like a protein, DNA, fat, or sugar.",
+  scientific:"Any organic molecule produced by a living organism, including proteins, nucleic acids, lipids, and carbohydrates, essential for biological processes.",
+  example:"DNA, proteins, and lipids are all examples of biomolecules found in your cells.",
+  real:"Biotechnology companies engineer cells to mass-produce specific biomolecules, like therapeutic antibodies.",
+  related:['protein','nucleic-acid','lipid']},
+ {id:'redox-reaction',cat:'biochemistry',name:'Redox Reaction',hi:'रेडॉक्स अभिक्रिया',mr:'रेडॉक्स अभिक्रिया',diff:'advance',
+  simple:"A chemical reaction where one molecule loses electrons and another gains them, often releasing energy.",
+  scientific:"A chemical reaction involving the transfer of electrons between two substances, where one is oxidised (loses electrons) and the other is reduced (gains electrons).",
+  example:"Cellular respiration relies on a series of redox reactions to release energy from glucose.",
+  real:"Biosensors often detect substances by measuring the redox reaction they trigger.",
+  related:['metabolite','atp']},
+ {id:'precision-breeding',cat:'agricultural-biotechnology',name:'Precision Breeding',hi:'अचूक प्रजनन',mr:'अचूक प्रजनन',diff:'advance',
+  simple:"Using modern tools, like gene editing, to make small, exact changes to a crop or animal's genes instead of slow traditional breeding.",
+  scientific:"The use of modern genetic technologies, such as gene editing, to make precise, targeted changes within a species' own gene pool, distinct from introducing foreign DNA.",
+  example:"Precision breeding was used to develop a tomato with naturally higher vitamin D content.",
+  real:"Several countries have introduced separate, lighter regulations for precision-bred crops compared to traditional GMOs.",
+  related:['gene-editing','gmo']},
+ {id:'seed-bank',cat:'agricultural-biotechnology',name:'Seed Bank',hi:'बीज बँक',mr:'बीज बँक',diff:'basic',
+  simple:"A safe storage facility that keeps seeds from many plant varieties in case they're needed in the future.",
+  scientific:"A facility that stores seed collections under controlled conditions to preserve genetic diversity of crop and wild plant species for future use.",
+  example:"The Svalbard Global Seed Vault stores backup seed samples from gene banks around the world.",
+  real:"Seed banks preserve genetic diversity that plant breeders may need to fight future pests or climate change.",
+  related:['genetic-diversity','hybrid-seed']},
+ {id:'biobrick',cat:'synthetic-biology',name:'BioBrick',hi:'बायोब्रिक',mr:'बायोब्रिक',diff:'advance',
+  simple:"A standardised, ready-to-use piece of DNA that engineers can snap together with others like building blocks.",
+  scientific:"A standardised DNA sequence that encodes a basic biological function and conforms to a common assembly format, allowing it to be combined with other BioBricks to build genetic circuits.",
+  example:"Student teams in the iGEM competition build new organisms by combining different BioBricks.",
+  real:"BioBricks make synthetic biology more like engineering, with reusable, interchangeable genetic parts.",
+  related:['genetic-circuit','synthetic-gene']},
+ {id:'metabolic-engineering',cat:'synthetic-biology',name:'Metabolic Engineering',hi:'चयापचय अभियांत्रिकी',mr:'चयापचय अभियांत्रिकी',diff:'advance',
+  simple:"Redesigning a cell's internal chemistry so it produces a useful new substance.",
+  scientific:"The practice of optimising or redirecting an organism's metabolic pathways, often through genetic modification, to increase production of a desired substance.",
+  example:"Metabolic engineering of yeast allows it to produce spider silk proteins instead of just alcohol.",
+  real:"Metabolic engineering is used to produce biofuels, flavour compounds, and medicines from engineered microbes.",
+  related:['chassis-organism','bioreactor']},
+ {id:'zoonotic-disease',cat:'virology',name:'Zoonotic Disease',hi:'प्राणिजन्य रोग',mr:'प्राणिजन्य रोग',diff:'intermediate',
+  simple:"A disease that can jump from animals to humans.",
+  scientific:"An infectious disease caused by a pathogen that has jumped from a non-human animal to a human host.",
+  example:"Rabies and avian flu are examples of zoonotic diseases that spread from animals to people.",
+  real:"Scientists monitor wildlife and livestock to catch new zoonotic viruses before they cause outbreaks in people.",
+  related:['virus','pandemic']},
+ {id:'viral-load',cat:'virology',name:'Viral Load',hi:'विषाणू भार',mr:'विषाणू भार',diff:'intermediate',
+  simple:"The amount of virus present in a person's blood or body fluids.",
+  scientific:"A measurement of the quantity of viral particles present in a given volume of a patient's bodily fluid, often blood, used to monitor infection severity or treatment response.",
+  example:"Doctors track a patient's HIV viral load to see how well their treatment is working.",
+  real:"Viral load testing helped track how infectious COVID-19 patients were at different stages of illness.",
+  related:['virus','viral-replication']},
+ {id:'intron',cat:'dna-rna',name:'Intron',hi:'इंट्रॉन',mr:'इंट्रॉन',diff:'advance',
+  simple:"A section inside a gene that gets cut out and removed before the final protein-making message is used.",
+  scientific:"A non-coding DNA sequence within a gene that is transcribed but removed from the mRNA through splicing before translation.",
+  example:"Human genes are often broken up by several introns between the coding sections.",
+  real:"Errors in intron removal (splicing) are linked to several genetic diseases.",
+  related:['exon','gene-expression']},
+ {id:'exon',cat:'dna-rna',name:'Exon',hi:'एक्सॉन',mr:'एक्सॉन',diff:'advance',
+  simple:"The part of a gene that stays in the final message and actually codes for the protein.",
+  scientific:"A coding region of a gene that remains in the mature mRNA after splicing and is translated into part of a protein.",
+  example:"After splicing removes the introns, the remaining exons are joined to form the final mRNA.",
+  real:"Exome sequencing focuses specifically on reading all of a genome's exons.",
+  related:['intron','exome']},
+ {id:'genetic-linkage',cat:'genetics',name:'Genetic Linkage',hi:'आनुवंशिक संलग्नता',mr:'आनुवंशिक संलग्नता',diff:'advance',
+  simple:"When two genes are located close together on a chromosome, so they tend to be inherited together.",
+  scientific:"The tendency of genes located close together on the same chromosome to be inherited together more often than expected by independent assortment.",
+  example:"Genetic linkage lets scientists locate an unknown disease gene near a known genetic marker.",
+  real:"Linkage analysis was historically key to mapping the location of disease-causing genes before genome sequencing existed.",
+  related:['chromosome','gene']},
+ {id:'polygenic-trait',cat:'genetics',name:'Polygenic Trait',hi:'बहुजनुकीय गुणधर्म',mr:'बहुजनुकीय गुणधर्म',diff:'advance',
+  simple:"A trait, like height, that is shaped by many genes acting together rather than just one.",
+  scientific:"A phenotypic trait influenced by the combined, small effects of many different genes, often together with environmental factors.",
+  example:"Height and skin colour are polygenic traits, shaped by many genes rather than a single one.",
+  real:"Polygenic risk scores, combining many genetic variants, are being studied to predict disease risk.",
+  related:['gwas','allele']},
+ {id:'lysosome',cat:'cell-biology',name:'Lysosome',hi:'लयकारिका (लायसोसोम)',mr:'लयकारिका (लायसोसोम)',diff:'advance',
+  simple:"A cell organelle full of enzymes that breaks down waste and worn-out parts, like the cell's recycling centre.",
+  scientific:"A membrane-bound organelle containing digestive enzymes that break down waste materials, cellular debris, and worn-out organelles.",
+  example:"Lysosomes digest old, damaged organelles so their parts can be reused by the cell.",
+  real:"Some genetic disorders, called lysosomal storage diseases, occur when lysosome enzymes are missing or faulty.",
+  related:['organelle','enzyme']},
+ {id:'cell-differentiation',cat:'cell-biology',name:'Cell Differentiation',hi:'कोशिका विभेदन',mr:'पेशी विभेदन',diff:'intermediate',
+  simple:"The process by which a general cell becomes a specialised type of cell, like a skin or nerve cell.",
+  scientific:"The process by which a less specialised cell, such as a stem cell, becomes a more specialised cell type with a specific structure and function.",
+  example:"Cell differentiation turns an unspecialised embryonic cell into a heart, skin, or nerve cell.",
+  real:"Scientists guide stem cell differentiation in the lab to grow specific tissue types for research and therapy.",
+  related:['stem-cell','gene-expression']},
+ {id:'transformation-genetic',cat:'genetic-engineering',name:'Transformation (Genetic)',hi:'रूपांतरण (आनुवंशिक)',mr:'रूपांतरण (आनुवंशिक)',diff:'advance',
+  simple:"The process of a bacterial cell taking up new DNA from its surroundings.",
+  scientific:"The genetic alteration of a bacterial cell resulting from the direct uptake and incorporation of exogenous DNA from its surroundings.",
+  example:"Scientists use transformation to insert a plasmid carrying a new gene into bacteria.",
+  real:"Bacterial transformation is a routine, everyday step in most genetic engineering labs.",
+  related:['plasmid','bacteria']},
+ {id:'transfection',cat:'genetic-engineering',name:'Transfection',hi:'ट्रान्सफेक्शन',mr:'ट्रान्सफेक्शन',diff:'advance',
+  simple:"Deliberately inserting new genetic material into an animal or plant cell (not bacteria).",
+  scientific:"The process of deliberately introducing nucleic acids into eukaryotic cells, often using chemical, viral, or physical delivery methods.",
+  example:"Researchers use transfection to insert a gene into human cells grown in a lab dish.",
+  real:"Transfection methods are used to manufacture proteins in cell cultures for biotech drugs.",
+  related:['viral-vector','recombinant-dna']},
+ {id:'ligase',cat:'molecular-biology',name:'Ligase',hi:'लायगेज',mr:'लायगेज',diff:'advance',
+  simple:"An enzyme that joins two pieces of DNA together, like molecular glue.",
+  scientific:"An enzyme that catalyses the joining of two DNA fragments by forming a new phosphodiester bond, sealing nicks in the DNA backbone.",
+  example:"DNA ligase seals a new gene into a cut-open plasmid during cloning.",
+  real:"Ligase is one of the essential tools, alongside restriction enzymes, used in classic genetic engineering.",
+  related:['restriction-enzyme','plasmid']},
+ {id:'hybridization-molecular',cat:'molecular-biology',name:'Hybridization (Molecular)',hi:'संकरण (आण्विक)',mr:'संकरण (आण्विक)',diff:'advance',
+  simple:"When two matching single strands of DNA or RNA stick together to form a double strand.",
+  scientific:"The process by which two complementary single-stranded nucleic acid molecules bind together through base pairing to form a double-stranded molecule.",
+  example:"A fluorescent DNA probe hybridizes only with its exact matching sequence in a sample.",
+  real:"DNA hybridization is the basic principle behind many genetic tests, including some paternity and disease tests.",
+  related:['dna','base-pair']},
+ {id:'contig',cat:'bioinformatics',name:'Contig',hi:'कॉन्टिग',mr:'कॉन्टिग',diff:'advance',
+  simple:"A long, continuous stretch of DNA sequence built by overlapping many small sequenced fragments.",
+  scientific:"A contiguous sequence of DNA created by assembling overlapping short sequence reads without gaps, used as a building block in genome assembly.",
+  example:"Sequencing produces millions of short reads that software stitches together into contigs.",
+  real:"Better contig assembly software has made it faster and cheaper to sequence a new species' genome.",
+  related:['genome-assembly','next-gen-sequencing']},
+ {id:'genome-assembly',cat:'bioinformatics',name:'Genome Assembly',hi:'जीनोम असेंब्ली',mr:'जीनोम असेंब्ली',diff:'advance',
+  simple:"Putting together millions of short, sequenced DNA pieces into one complete genome, like a giant jigsaw puzzle.",
+  scientific:"The computational process of reconstructing a complete genome sequence from overlapping short sequencing reads.",
+  example:"Genome assembly turned billions of short DNA reads into the first complete human genome map.",
+  real:"Improved genome assembly methods finally completed a truly gap-free human genome in 2022.",
+  related:['contig','next-gen-sequencing']},
+ {id:'structural-variant',cat:'genomics',name:'Structural Variant',hi:'संरचनात्मक भिन्नता',mr:'संरचनात्मक तफावत',diff:'advance',
+  simple:"A large-scale change in DNA, such as a big chunk being deleted, duplicated, or flipped around.",
+  scientific:"A large-scale genomic alteration, typically over 50 base pairs, including deletions, duplications, insertions, inversions, or translocations of DNA segments.",
+  example:"A structural variant that deletes part of a chromosome can cause a genetic syndrome.",
+  real:"Structural variant detection is increasingly used in cancer genomics to find tumour-driving DNA changes.",
+  related:['copy-number-variation','mutation']},
+ {id:'metagenomics',cat:'genomics',name:'Metagenomics',hi:'मेटाजीनोमिक्स',mr:'मेटाजीनोमिक्स',diff:'advance',
+  simple:"Studying all the genetic material found in a whole community of microbes at once, without growing them individually.",
+  scientific:"The study of genetic material recovered directly from environmental or biological samples, allowing analysis of entire microbial communities without needing to culture individual species.",
+  example:"Metagenomics can reveal all the bacteria species living in a soil sample or the human gut.",
+  real:"Metagenomics helped scientists rapidly identify the virus behind the COVID-19 outbreak from patient samples.",
+  related:['microbiome','genome-sequencing']},
+ {id:'respiratory-system',cat:'human-biology',name:'Respiratory System',hi:'श्वसन संस्था',mr:'श्वसन संस्था',diff:'basic',
+  simple:"The organs, like lungs, that let the body breathe in oxygen and breathe out carbon dioxide.",
+  scientific:"The organ system, including the lungs and airways, responsible for the exchange of oxygen and carbon dioxide between the body and the environment.",
+  example:"Oxygen you breathe in through your respiratory system is carried by blood to every cell.",
+  real:"mRNA and viral-vector vaccines against respiratory viruses train the immune system to protect the respiratory system.",
+  related:['circulatory-system']},
+ {id:'skeletal-system',cat:'human-biology',name:'Skeletal System',hi:'सांगाडा संस्था',mr:'सांगाडा संस्था',diff:'basic',
+  simple:"The framework of bones that supports and protects the body.",
+  scientific:"The organ system composed of bones, cartilage, and ligaments that provides structural support, protection for organs, and enables movement.",
+  example:"Your skull, part of the skeletal system, protects your brain from injury.",
+  real:"Bioengineered bone scaffolds are being developed to help repair severe skeletal injuries.",
+  related:['cell-differentiation']},
+ {id:'culture-medium',cat:'microbiology',name:'Culture Medium',hi:'संवर्धन माध्यम',mr:'संवर्धन माध्यम',diff:'basic',
+  simple:"A nutrient-rich liquid or gel used in the lab to grow bacteria, cells, or other microbes.",
+  scientific:"A liquid or solid nutrient preparation used to support the growth of microorganisms or cells under controlled laboratory conditions.",
+  example:"Agar plates are a common solid culture medium used to grow bacterial colonies.",
+  real:"Choosing the right culture medium is critical for successfully growing engineered cells in a bioreactor.",
+  related:['bacteria','bioreactor']},
+ {id:'gram-staining',cat:'microbiology',name:'Gram Staining',hi:'ग्राम स्टेनिंग',mr:'ग्राम स्टेनिंग',diff:'intermediate',
+  simple:"A simple dye test that sorts bacteria into two groups based on their cell wall, helping identify them.",
+  scientific:"A staining technique used to classify bacteria into two broad groups, Gram-positive or Gram-negative, based on differences in their cell wall structure.",
+  example:"Gram staining a sample can quickly tell a doctor what type of bacteria might be causing an infection.",
+  real:"Gram staining is still one of the fastest, cheapest first tests used in microbiology labs today.",
+  related:['bacteria']},
+ {id:'monoclonal-antibody',cat:'immunology',name:'Monoclonal Antibody',hi:'मोनोक्लोनल प्रतिपिंड',mr:'मोनोक्लोनल प्रतिपिंड',diff:'advance',
+  simple:"A lab-made antibody that is an exact copy, designed to target just one specific thing.",
+  scientific:"An antibody produced by a single clone of immune cells, engineered to be identical and bind to one specific antigen with high precision.",
+  example:"Monoclonal antibody drugs were widely used as an early treatment option during the COVID-19 pandemic.",
+  real:"Monoclonal antibodies are among the best-selling biotechnology drugs, used to treat cancer and autoimmune disease.",
+  related:['antibody','antigen']},
+ {id:'passive-immunity',cat:'immunology',name:'Passive Immunity',hi:'निष्क्रिय प्रतिरक्षा',mr:'निष्क्रिय प्रतिकारशक्ती',diff:'intermediate',
+  simple:"Short-term protection given to the body using ready-made antibodies, instead of the body making its own.",
+  scientific:"Temporary immunity conferred by the transfer of pre-formed antibodies from another source, rather than by the individual's own immune response.",
+  example:"A newborn baby gets passive immunity from antibodies passed through its mother's milk.",
+  real:"Antibody injections are used to give patients passive immunity quickly after exposure to certain diseases like rabies.",
+  related:['antibody','memory-cell']},
+ {id:'hydrolysis',cat:'biochemistry',name:'Hydrolysis',hi:'जलविघटन',mr:'जलविघटन',diff:'intermediate',
+  simple:"A chemical reaction that uses water to break a larger molecule into smaller pieces.",
+  scientific:"A chemical reaction in which a molecule is split into smaller molecules by the addition of water, often catalysed by an enzyme.",
+  example:"Digestion uses hydrolysis reactions to break large food molecules into smaller, absorbable ones.",
+  real:"Industrial biotechnology uses enzyme-driven hydrolysis to break down plant material into biofuel sugars.",
+  related:['enzyme','biomolecule']},
+ {id:'fermentation',cat:'biochemistry',name:'Fermentation',hi:'किण्वन',mr:'किण्वन',diff:'basic',
+  simple:"A process where microbes like yeast or bacteria break down sugars to produce things like alcohol, gas, or acid, without needing oxygen.",
+  scientific:"A metabolic process in which microorganisms convert sugars into products such as acids, gases, or alcohol under anaerobic conditions.",
+  example:"Yeast fermentation of sugar produces the alcohol and bubbles found in beer.",
+  real:"Large-scale microbial fermentation is the main method used to produce insulin and many other biotech drugs.",
+  related:['bacteria','bioreactor']},
+ {id:'disease-resistant-crop',cat:'agricultural-biotechnology',name:'Disease-Resistant Crop',hi:'रोगप्रतिकारक पीक',mr:'रोगप्रतिकारक पीक',diff:'intermediate',
+  simple:"A crop plant engineered or bred to fight off a specific plant disease on its own.",
+  scientific:"A crop variety developed through breeding or genetic engineering to carry genes that confer resistance to specific pathogens, reducing crop loss.",
+  example:"Disease-resistant papaya was engineered to survive a virus that once devastated Hawaii's papaya farms.",
+  real:"Disease-resistant crops reduce the need for chemical fungicides and pesticides on farms.",
+  related:['gmo','bt-crop']},
+ {id:'drought-tolerant-crop',cat:'agricultural-biotechnology',name:'Drought-Tolerant Crop',hi:'दुष्काळ-सहनशील पीक',mr:'दुष्काळ-सहनशील पीक',diff:'intermediate',
+  simple:"A crop engineered or bred to survive and still produce food with much less water than usual.",
+  scientific:"A crop variety developed to maintain growth and yield under water-limited conditions, often through genes that improve water-use efficiency or stress tolerance.",
+  example:"Drought-tolerant maize varieties help farmers in dry regions maintain yield during poor rainy seasons.",
+  real:"Drought-tolerant crops are seen as an important tool for farming in a changing climate.",
+  related:['precision-breeding','gmo']},
+ {id:'riboswitch',cat:'synthetic-biology',name:'Riboswitch',hi:'रायबोस्विच',mr:'रायबोस्विच',diff:'advance',
+  simple:"A section of RNA that changes shape when it senses a chemical, switching a gene on or off in response.",
+  scientific:"A regulatory segment of mRNA that changes its structure upon binding a small molecule, thereby controlling gene expression without needing a protein regulator.",
+  example:"Engineers use a synthetic riboswitch to make a cell glow only when a target chemical is present.",
+  real:"Riboswitches are being explored as tiny, protein-free 'sensors' in engineered diagnostic cells.",
+  related:['genetic-circuit','rna']},
+ {id:'cell-free-system',cat:'synthetic-biology',name:'Cell-Free System',hi:'पेशीमुक्त प्रणाली',mr:'पेशीमुक्त प्रणाली',diff:'advance',
+  simple:"A way of making proteins using just the cell's molecular machinery in a test tube, without any living cells.",
+  scientific:"A biochemical system that uses cellular extracts, containing the machinery needed for transcription and translation, to produce proteins outside of living cells.",
+  example:"Cell-free systems can be freeze-dried onto paper to make cheap, portable diagnostic test strips.",
+  real:"Cell-free systems allowed rapid prototyping of vaccine components early in the COVID-19 pandemic.",
+  related:['ribosome','translation']},
+ {id:'attenuated-virus',cat:'virology',name:'Attenuated Virus',hi:'दुर्बलीकृत विषाणू',mr:'क्षीणीकृत विषाणू',diff:'advance',
+  simple:"A weakened form of a virus that can still trigger an immune response but is too weak to cause serious disease.",
+  scientific:"A virus that has been weakened, typically through repeated culturing, so it can still stimulate an immune response without causing significant illness in a healthy host.",
+  example:"The measles vaccine uses a live attenuated virus to safely build immunity.",
+  real:"Live attenuated vaccines have been used successfully for decades against diseases like measles and polio.",
+  related:['vaccine','virus']},
+ {id:'viral-envelope',cat:'virology',name:'Viral Envelope',hi:'विषाणू आवरण',mr:'विषाणू आवरण',diff:'advance',
+  simple:"A fatty outer covering that some viruses have around their protein coat, taken from the host cell.",
+  scientific:"A lipid membrane, derived from the host cell, that surrounds the protein capsid of certain viruses and plays a role in entering new host cells.",
+  example:"The flu virus has a viral envelope studded with proteins that help it attach to human cells.",
+  real:"Soap destroys the viral envelope of many viruses, which is why handwashing is effective against them.",
+  related:['virus','host-cell']},
+ {id:'diagnosis-basics',cat:'diagnosis',name:'Diagnosis',hi:'निदान',mr:'निदान',diff:'basic',
+  simple:"Finding out what illness or condition a person has, using symptoms, tests, and a doctor's judgement.",
+  scientific:"The process of identifying a disease or condition from its signs, symptoms, and the results of clinical and laboratory tests.",
+  example:"A doctor listens to your symptoms, orders a blood test, and then makes a diagnosis.",
+  real:"Faster, cheaper diagnosis is one of the biggest ways biotechnology helps patients.",
+  related:['biomarker','pathology']},
+ {id:'biomarker',cat:'diagnosis',name:'Biomarker',hi:'जैवचिन्हक',mr:'जैवचिन्हक',diff:'basic',
+  simple:"A measurable sign in your body, like a substance in the blood, that shows whether something is wrong.",
+  scientific:"A measurable biological indicator, such as a molecule, gene, or characteristic, used to detect or monitor a normal process, disease, or response to treatment.",
+  example:"High blood sugar is a biomarker used to check for diabetes.",
+  real:"Doctors track biomarkers to see if a treatment is working.",
+  related:['diagnosis-basics','elisa']},
+ {id:'elisa',cat:'diagnosis',name:'ELISA Test',hi:'एलिसा परीक्षण',mr:'एलिसा चाचणी',diff:'intermediate',
+  simple:"A lab test that uses antibodies to detect a specific substance, such as a germ's protein, in a blood sample.",
+  scientific:"Enzyme-Linked Immunosorbent Assay — a plate-based technique that uses antibodies linked to an enzyme to detect and measure a target antigen or antibody in a sample.",
+  example:"An ELISA can show whether a person has antibodies against a virus.",
+  real:"ELISA is widely used for pregnancy tests, HIV screening, and allergy testing.",
+  related:['antibody','antigen']},
+ {id:'rt-pcr',cat:'diagnosis',name:'RT-PCR Test',hi:'आरटी-पीसीआर परीक्षण',mr:'आरटी-पीसीआर चाचणी',diff:'intermediate',
+  simple:"A highly accurate lab test that finds the genetic material of a virus by copying it many times until it can be detected.",
+  scientific:"Reverse Transcription Polymerase Chain Reaction — converts RNA into DNA, then amplifies it so that even tiny amounts of viral RNA can be detected.",
+  example:"The RT-PCR swab test was the standard way to confirm COVID-19.",
+  real:"RT-PCR is used to diagnose many viral infections, including flu and dengue.",
+  related:['pcr','rna']},
+ {id:'rapid-antigen-test',cat:'diagnosis',name:'Rapid Antigen Test',hi:'रॅपिड अँटीजन चाचणी',mr:'रॅपिड अँटीजन चाचणी',diff:'basic',
+  simple:"A quick test, often done with a swab, that shows within minutes whether a germ's protein is present.",
+  scientific:"A point-of-care immunoassay that detects specific pathogen proteins (antigens) in a sample, typically giving a result in 15–30 minutes.",
+  example:"Home COVID tests are rapid antigen tests.",
+  real:"Rapid tests help find infections fast in places with few labs.",
+  related:['antigen','rt-pcr']},
+ {id:'biopsy',cat:'diagnosis',name:'Biopsy',hi:'जैविक ऊतक परीक्षण (बायोप्सी)',mr:'बायोप्सी',diff:'basic',
+  simple:"Taking a tiny piece of tissue from the body so it can be looked at under a microscope.",
+  scientific:"A medical procedure in which a small sample of tissue or cells is removed and examined, usually microscopically, to diagnose disease such as cancer.",
+  example:"A doctor may take a skin biopsy to check if a mole is cancerous.",
+  real:"Biopsy results guide which treatment a patient should receive.",
+  related:['pathology','diagnosis-basics']},
+ {id:'pathology',cat:'diagnosis',name:'Pathology',hi:'रोगनिदानशास्त्र',mr:'रोगनिदानशास्त्र',diff:'intermediate',
+  simple:"The study of disease by examining body tissues, blood, and other fluids in a lab.",
+  scientific:"The branch of medicine that studies the causes and effects of disease by examining tissues, cells, and body fluids.",
+  example:"A pathologist examines a biopsy under a microscope to tell the doctor what is wrong.",
+  real:"Pathology labs are the 'detectives' behind most medical diagnoses.",
+  related:['biopsy','diagnosis-basics']},
+ {id:'genetic-testing',cat:'diagnosis',name:'Genetic Testing',hi:'आनुवंशिक चाचणी',mr:'आनुवंशिक चाचणी',diff:'intermediate',
+  simple:"A test that reads your DNA to look for changes linked to a disease or an inherited condition.",
+  scientific:"Laboratory analysis of DNA, RNA, chromosomes, or proteins to identify variants associated with inherited conditions or disease risk.",
+  example:"Genetic testing can show if a family carries a gene for sickle-cell disease.",
+  real:"Used before pregnancy and in cancer care to choose the best treatment.",
+  related:['genetic-disorder','mutation','dna']},
+ {id:'newborn-screening',cat:'diagnosis',name:'Newborn Screening',hi:'नवजात शिशु तपासणी',mr:'नवजात बालक तपासणी',diff:'basic',
+  simple:"Simple tests done on babies soon after birth to catch rare conditions early, before symptoms appear.",
+  scientific:"A public-health programme that tests newborns, typically with a heel-prick blood sample, for treatable metabolic, genetic, and hormonal disorders.",
+  example:"A few drops of blood from a baby's heel can screen for several rare conditions.",
+  real:"Early detection lets doctors start treatment right away and prevent serious problems.",
+  related:['genetic-testing','biomarker']},
+];
+
+const EASY = {
+ dna:"Think of DNA as a giant recipe book for building your body. Almost every cell keeps a copy.",
+ rna:"RNA is like a photocopy of one recipe page, taken to the kitchen so the original book stays safe.",
+ gene:"A gene is one recipe in the recipe book of DNA.",
+ genome:"The genome is the complete recipe book, every page included.",
+ chromosome:"A chromosome is one tightly packed volume of the recipe book. Most human cells hold 46 of them.",
+ cell:"Cells are the tiny building blocks of every living thing, a bit like bricks in a wall.",
+ protein:"Proteins are the workers and building materials of the body: the builders, movers, and messengers.",
+ enzyme:"An enzyme is a tiny machine that speeds up one particular job, such as cutting food into smaller pieces.",
+ virus:"A virus is like a tiny intruder that must get inside a cell to use its machinery and make copies of itself.",
+ bacteria:"Bacteria are tiny one-celled living things. Many are helpful, like those in your gut; a few cause illness.",
+ vaccine:"A vaccine is like a practice drill: it shows your body what a germ looks like before the real one arrives.",
+ antibody:"Antibodies are tiny tags made by your body that stick to one specific germ so it can be removed.",
+ antigen:"An antigen is like a germ's ID badge that your immune system checks.",
+ mutation:"A mutation is like a typo in the recipe book. Some typos change nothing; some change the dish.",
+ pcr:"PCR is like a photocopier for DNA. It makes millions of copies of a tiny sample so it can be tested.",
+ crispr:"CRISPR works like find-and-replace in a document: it finds a spot in DNA and edits it.",
+ transcription:"Copying one recipe page from the big book (DNA) onto a small note (RNA).",
+ translation:"The cook (ribosome) reads the note (RNA) and prepares the dish (protein).",
+ hormone:"Hormones are like text messages carried by the blood, telling organs what to do.",
+ 'stem-cell':"Stem cells are like blank cards that can be turned into many different kinds of cells.",
+};
+
+function byId(id){return WORDS.find(w=>w.id===id);}
+function catWords(cat){return WORDS.filter(w=>w.cat===cat);}
+function ytLink(term){return `https://www.youtube.com/results?search_query=${encodeURIComponent(term+' biology explained')}`;}
+function wordOfDay(){
+  const start=new Date(new Date().getFullYear(),0,0);
+  const diff=new Date()-start;
+  const day=Math.floor(diff/86400000);
+  return WORDS[day % WORDS.length];
+}
+function catDiagram(catId){
+  const S='<svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">';
+  const E='</svg>';
+  const diagrams = {
+   'dna-rna': S+'<path d="M40,10 C70,40 30,70 60,100 C90,130 50,140 130,150" stroke="#fff" stroke-width="4" fill="none"/><path d="M60,10 C90,40 50,70 80,100 C110,130 70,140 150,150" stroke="#dff5ea" stroke-width="4" fill="none"/>'+Array.from({length:7}).map((_,i)=>`<line x1="${45+i*12}" y1="${20+i*17}" x2="${65+i*12}" y2="${20+i*17}" stroke="#fff" stroke-width="2" opacity=".8"/>`).join('')+E,
+   'genetics': S+'<ellipse cx="100" cy="75" rx="26" ry="60" fill="none" stroke="#fff" stroke-width="5"/><line x1="74" y1="75" x2="126" y2="75" stroke="#fff" stroke-width="3"/><line x1="80" y1="45" x2="120" y2="45" stroke="#dff5ea" stroke-width="3"/><line x1="80" y1="105" x2="120" y2="105" stroke="#dff5ea" stroke-width="3"/>'+E,
+   'cell-biology': S+'<circle cx="100" cy="75" r="60" fill="none" stroke="#fff" stroke-width="5"/><circle cx="100" cy="75" r="24" fill="#dff5ea" opacity=".85"/><circle cx="60" cy="50" r="8" fill="#fff" opacity=".7"/><circle cx="140" cy="95" r="10" fill="#fff" opacity=".7"/><circle cx="70" cy="110" r="6" fill="#fff" opacity=".6"/>'+E,
+   'genetic-engineering': S+'<line x1="30" y1="30" x2="120" y2="120" stroke="#fff" stroke-width="5"/><line x1="30" y1="120" x2="120" y2="30" stroke="#fff" stroke-width="5"/><circle cx="30" cy="30" r="10" fill="none" stroke="#fff" stroke-width="3"/><circle cx="30" cy="120" r="10" fill="none" stroke="#fff" stroke-width="3"/><line x1="120" y1="75" x2="175" y2="75" stroke="#dff5ea" stroke-width="4"/>'+E,
+   'molecular-biology': S+Array.from({length:6}).map((_,i)=>{const a=i*60*Math.PI/180;const x=100+45*Math.cos(a),y=75+45*Math.sin(a);return `<circle cx="${x}" cy="${y}" r="13" fill="#fff" opacity=".85"/><line x1="100" y1="75" x2="${x}" y2="${y}" stroke="#dff5ea" stroke-width="3"/>`;}).join('')+'<circle cx="100" cy="75" r="16" fill="#fff"/>'+E,
+   'bioinformatics': S+'<rect x="35" y="30" width="130" height="80" rx="8" fill="none" stroke="#fff" stroke-width="5"/>'+Array.from({length:5}).map((_,i)=>`<rect x="${48+i*22}" y="${45+ (i%3)*15}" width="12" height="${20+(i%2)*20}" fill="#dff5ea"/>`).join('')+E,
+   'genomics': S+'<rect x="25" y="55" width="150" height="20" rx="4" fill="none" stroke="#fff" stroke-width="3"/>'+Array.from({length:10}).map((_,i)=>`<rect x="${28+i*15}" y="58" width="10" height="14" fill="${i%2?'#dff5ea':'#fff'}" opacity=".8"/>`).join('')+E,
+   'human-biology': S+'<circle cx="100" cy="35" r="18" fill="none" stroke="#fff" stroke-width="4"/><line x1="100" y1="53" x2="100" y2="110" stroke="#fff" stroke-width="4"/><line x1="100" y1="65" x2="65" y2="95" stroke="#fff" stroke-width="4"/><line x1="100" y1="65" x2="135" y2="95" stroke="#fff" stroke-width="4"/><line x1="100" y1="110" x2="75" y2="145" stroke="#fff" stroke-width="4"/><line x1="100" y1="110" x2="125" y2="145" stroke="#fff" stroke-width="4"/>'+E,
+  };
+  const more = {
+   'microbiology': S+Array.from({length:5}).map((_,i)=>`<ellipse cx="${45+i*28}" cy="${55+(i%2)*40}" rx="16" ry="10" fill="#fff" opacity=".8" transform="rotate(${i*20} ${45+i*28} ${55+(i%2)*40})"/>`).join('')+E,
+   'immunology': S+'<path d="M100,15 L155,35 L155,80 Q155,125 100,140 Q45,125 45,80 L45,35 Z" fill="none" stroke="#fff" stroke-width="5"/><path d="M75,80 L92,97 L128,58" stroke="#dff5ea" stroke-width="6" fill="none"/>'+E,
+   'biochemistry': S+'<path d="M85,20 L85,60 L55,120 Q52,130 65,130 L135,130 Q148,130 145,120 L115,60 L115,20" fill="none" stroke="#fff" stroke-width="5"/><line x1="78" y1="20" x2="122" y2="20" stroke="#fff" stroke-width="5"/><circle cx="90" cy="105" r="5" fill="#dff5ea"/><circle cx="110" cy="115" r="4" fill="#dff5ea"/><circle cx="100" cy="95" r="4" fill="#dff5ea"/>'+E,
+   'agricultural-biotechnology': S+'<line x1="100" y1="140" x2="100" y2="60" stroke="#fff" stroke-width="5"/><path d="M100,60 Q70,40 55,60 Q75,80 100,60" fill="#dff5ea"/><path d="M100,60 Q130,40 145,60 Q125,80 100,60" fill="#dff5ea"/><path d="M100,90 Q75,75 65,95 Q85,110 100,90" fill="#fff" opacity=".8"/><path d="M100,90 Q125,75 135,95 Q115,110 100,90" fill="#fff" opacity=".8"/>'+E,
+   'synthetic-biology': S+'<rect x="30" y="65" width="30" height="20" rx="4" fill="none" stroke="#fff" stroke-width="3"/><rect x="90" y="30" width="30" height="20" rx="4" fill="none" stroke="#fff" stroke-width="3"/><rect x="90" y="100" width="30" height="20" rx="4" fill="none" stroke="#fff" stroke-width="3"/><rect x="150" y="65" width="30" height="20" rx="4" fill="none" stroke="#fff" stroke-width="3"/><line x1="60" y1="75" x2="90" y2="40" stroke="#dff5ea" stroke-width="3"/><line x1="60" y1="75" x2="90" y2="110" stroke="#dff5ea" stroke-width="3"/><line x1="120" y1="40" x2="150" y2="75" stroke="#dff5ea" stroke-width="3"/><line x1="120" y1="110" x2="150" y2="75" stroke="#dff5ea" stroke-width="3"/>'+E,
+   'virology': S+'<circle cx="100" cy="75" r="35" fill="none" stroke="#fff" stroke-width="5"/>'+Array.from({length:10}).map((_,i)=>{const a=i*36*Math.PI/180;const x1=100+35*Math.cos(a),y1=75+35*Math.sin(a),x2=100+48*Math.cos(a),y2=75+48*Math.sin(a);return `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#dff5ea" stroke-width="4"/>`;}).join('')+E,
+  };
+  more['diagnosis']=S+'<circle cx="85" cy="65" r="38" fill="none" stroke="#fff" stroke-width="6"/><line x1="113" y1="93" x2="160" y2="135" stroke="#fff" stroke-width="8"/><polyline points="55,65 72,65 80,45 92,88 102,65 115,65" fill="none" stroke="#dff5ea" stroke-width="4"/>'+E;
+  Object.assign(diagrams, more);
+  return diagrams[catId] || S+E;
+}
+function toggleTheme(){
+  const r=document.documentElement;
+  r.setAttribute('data-theme', r.getAttribute('data-theme')==='dark'?'light':'dark');
+}
+
+function go(route){ location.hash = route; }
+window.addEventListener('hashchange', render);
+window.addEventListener('DOMContentLoaded', render);
+
+function render(){
+  const hash = location.hash.replace('#','') || 'home';
+  const [route, arg] = hash.split('/');
+  const app = document.getElementById('app');
+  if(route==='home') app.innerHTML = viewHome();
+  else if(route==='categories') app.innerHTML = viewCategories();
+  else if(route==='category') app.innerHTML = viewCategory(arg);
+  else if(route==='word') app.innerHTML = viewWord(arg);
+  else if(route==='compare') app.innerHTML = viewCompare();
+  else if(route==='quiz') app.innerHTML = viewQuiz(arg);
+  else if(route==='contact') app.innerHTML = viewContact();
+  else if(route==='search') app.innerHTML = viewSearch(arg);
+  else if(route==='atoz') app.innerHTML = viewAtoZ();
+  else if(route==='sources') app.innerHTML = viewSources();
+  else app.innerHTML = viewHome();
+  window.scrollTo(0,0);
+  attachHandlers(route,arg);
+}
+
+function viewHome(){
+  const w = wordOfDay();
+  return `
+  <div class="hero">
+    <svg class="hero-bg" viewBox="0 0 800 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,100 Q50,20 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100" stroke="var(--blue)" stroke-width="3" fill="none"/>
+      <path d="M0,100 Q50,180 100,100 T200,100 T300,100 T400,100 T500,100 T600,100 T700,100 T800,100" stroke="var(--green)" stroke-width="3" fill="none"/>
+      ${Array.from({length:16}).map((_,i)=>{const x=i*50+25;const y=100+ (i%2? -40:40)*0.55;return `<line x1="${x}" y1="${100-((i%2?-1:1)*35)}" x2="${x}" y2="${100+((i%2?-1:1)*35)}" stroke="var(--muted)" stroke-width="2" opacity=".6"/>`;}).join('')}
+    </svg>
+    <h1>DECODING OF BIOTECHNOLOGY WORDS</h1>
+    <p>Explore the life-related words in simple language. No biology background needed.</p>
+    <div class="searchbar">
+      <input id="searchInput" placeholder="Search biotechnology words..." onkeydown="if(event.key==='Enter')doSearch()">
+      <button onclick="doSearch()">Search</button>
+    </div>
+    <div class="wod">🌟 Word of the day: <b onclick="go('word/${w.id}')">${w.name}</b> — ${w.simple}</div>
+  </div>
+  <h2 class="section">Categories</h2>
+  <div class="grid">
+    ${CATS.map(c=>`<div class="card" onclick="go('category/${c.id}')">
+      <div class="ic">${c.icon}</div><h3>${c.name}</h3><p>${c.desc}</p>
+      <span class="pill">${catWords(c.id).length} words</span>
+    </div>`).join('')}
+  </div>
+  <h2 class="section">Try these too</h2>
+  <div class="grid">
+    <div class="card" onclick="go('compare')"><div class="ic">⚖️</div><h3>Compare Terms</h3><p>e.g. DNA vs RNA</p></div>
+    <div class="card" onclick="go('quiz')"><div class="ic">📝</div><h3>Take a Quiz</h3><p>Test what you've learned</p></div>
+    <div class="card" onclick="go('contact')"><div class="ic">✉️</div><h3>Suggest a Word</h3><p>Don't understand a term? Ask us.</p></div>
+  </div>`;
+}
+
+function doSearch(){
+  const v = document.getElementById('searchInput').value.trim();
+  go('search/'+encodeURIComponent(v));
+}
+function viewSearch(q){
+  q = decodeURIComponent(q||'').toLowerCase();
+  const results = WORDS.filter(w=>w.name.toLowerCase().includes(q) || w.simple.toLowerCase().includes(q));
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">Search results for "${q}"</h2>
+  ${results.length? results.map(w=>wordRow(w)).join('') : '<p class="note">No matching words yet — try Categories, or suggest this word via Contact.</p>'}`;
+}
+
+function viewCategories(){
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">All Categories</h2>
+  <div class="grid">
+    ${CATS.map(c=>`<div class="card" onclick="go('category/${c.id}')">
+      <div class="ic">${c.icon}</div><h3>${c.name}</h3><p>${c.desc}</p>
+      <span class="pill">${catWords(c.id).length} words</span>
+    </div>`).join('')}
+  </div>
+  <p class="note">More categories (Molecular Biology, Bioinformatics, Genomics, Human Biology) are coming soon — let us know which term you want first via Contact.</p>`;
+}
+
+function wordRow(w){
+  return `<div class="wordrow" onclick="go('word/${w.id}')">
+    <div><strong>${w.name}</strong> <span class="tag">— ${w.simple.slice(0,60)}...</span></div>
+    <span class="pill ${w.diff}">${w.diff}</span>
+  </div>`;
+}
+
+function viewSources(){
+  const orgs=[
+   ['WHO — World Health Organization','https://www.who.int','Global health facts on diseases, vaccines and testing.'],
+   ['NIH — National Institutes of Health','https://www.nih.gov','Large US medical research agency with plain-language health guides.'],
+   ['NHGRI — National Human Genome Research Institute','https://www.genome.gov/genetics-glossary','Talking Glossary of genetic and genomic terms.'],
+   ['NCBI — National Center for Biotechnology Information','https://www.ncbi.nlm.nih.gov','Home of GenBank, BLAST and free biomedical books.'],
+   ['EMBL-EBI','https://www.ebi.ac.uk','European bioinformatics databases and online training.'],
+   ['CDC — Centers for Disease Control and Prevention','https://www.cdc.gov','Reliable information on infections, outbreaks and prevention.'],
+   ['US FDA','https://www.fda.gov','Approval and safety information for medicines, vaccines and tests.'],
+   ['ICMR — Indian Council of Medical Research','https://www.icmr.gov.in','India\'s apex body for medical and health research.'],
+   ['DBT — Department of Biotechnology, India','https://dbtindia.gov.in','Government of India body for biotechnology research and policy.'],
+   ['CSIR — Council of Scientific & Industrial Research','https://www.csir.res.in','India\'s national research organisation.'],
+  ];
+  const vids=[
+   ['Khan Academy — Biology','https://www.khanacademy.org/science/biology','Free beginner-friendly video lessons.'],
+   ['HHMI BioInteractive','https://www.biointeractive.org','Free videos and animations on DNA, evolution and disease.'],
+   ['Learn.Genetics (University of Utah)','https://learn.genetics.utah.edu','Interactive animations explaining genes and cells.'],
+  ];
+  const row=a=>`<a class="wordrow" href="${a[1]}" target="_blank" rel="noopener" style="text-decoration:none;"><div><strong>${a[0]}</strong><div class="tag">${a[2]}</div></div><span class="pill">Open ↗</span></a>`;
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">🏛️ Trusted Sources & Authorised Organisations</h2>
+  <p class="tag">Official bodies you can rely on to check or learn more about any term.</p>
+  ${orgs.map(row).join('')}
+  <h2 class="section">🎥 Free Video Lessons</h2>
+  ${vids.map(row).join('')}
+  <div class="videolinks" style="margin-top:10px;">
+    <a href="${ytLink('biotechnology basics for beginners')}" target="_blank" rel="noopener">▶ English</a>
+    <a href="${ytLink('biotechnology basics Hindi')}" target="_blank" rel="noopener">▶ हिंदी</a>
+    <a href="${ytLink('biotechnology basics Marathi')}" target="_blank" rel="noopener">▶ मराठी</a>
+  </div>
+  <p class="note">⚠️ This dictionary is for learning only and is not medical advice. For any health concern, please see a qualified doctor.</p>`;
+}
+
+function viewAtoZ(){
+  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const byLetter = {};
+  WORDS.forEach(w=>{const L=w.name[0].toUpperCase(); (byLetter[L]=byLetter[L]||[]).push(w);});
+  Object.values(byLetter).forEach(arr=>arr.sort((a,b)=>a.name.localeCompare(b.name)));
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">A–Z Index</h2>
+  <div style="margin-bottom:16px;">${letters.map(L=>byLetter[L]?`<a href="#letter-${L}" class="pill" style="text-decoration:none;margin:2px;display:inline-block;">${L}</a>`:`<span class="pill" style="opacity:.3;margin:2px;display:inline-block;">${L}</span>`).join('')}</div>
+  ${letters.filter(L=>byLetter[L]).map(L=>`
+    <h3 id="letter-${L}" style="color:var(--blue2);margin-top:22px;">${L}</h3>
+    ${byLetter[L].map(w=>wordRow(w)).join('')}
+  `).join('')}`;
+}
+
+function viewCategory(id){
+  const c = CATS.find(c=>c.id===id) || CATS[0];
+  const words = catWords(c.id);
+  return `<span class="backlink" onclick="go('categories')">← Categories</span>
+  <h1>${c.icon} ${c.name}</h1><p class="tag">${c.desc}</p>
+  <div class="videolinks" style="margin:10px 0;">
+    <a href="${ytLink(c.name+' introduction')}" target="_blank" rel="noopener">▶ Watch: ${c.name} overview (English)</a>
+    <a href="${ytLink(c.name+' Hindi जीव विज्ञान परिचय')}" target="_blank" rel="noopener">▶ हिंदी</a>
+    <a href="${ytLink(c.name+' Marathi जीवशास्त्र परिचय')}" target="_blank" rel="noopener">▶ मराठी</a>
+  </div>
+  <div style="margin:14px 0;">
+    <label class="tag">Filter by level: </label>
+    <select id="lvl" onchange="filterLevel('${c.id}')">
+      <option value="all">All levels</option>
+      <option value="basic">Basic</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advance">Advance</option>
+    </select>
+  </div>
+  <div id="wordlist">${words.map(w=>wordRow(w)).join('')}</div>
+  <p class="note">💡 Related processes in this category: ${words.map(w=>w.name).join(', ')} — explore each to see how they connect.</p>`;
+}
+function filterLevel(cid){
+  const lvl = document.getElementById('lvl').value;
+  const words = catWords(cid).filter(w=>lvl==='all'||w.diff===lvl);
+  document.getElementById('wordlist').innerHTML = words.map(w=>wordRow(w)).join('') || '<p class="note">No words at this level yet.</p>';
+}
+
+function viewWord(id){
+  const w = byId(id);
+  if(!w) return `<p>Word not found.</p>`;
+  const cat = CATS.find(c=>c.id===w.cat);
+  return `<span class="backlink" onclick="go('category/${w.cat}')">← ${cat.name}</span>
+  <div class="wordpage">
+    <span class="pill ${w.diff}">${w.diff}</span>
+    <h1>${w.name}</h1>
+    <p class="tag">Category: ${cat.icon} ${cat.name}</p>
+    <div class="imgplaceholder">${catDiagram(cat.id)}</div>
+
+    ${EASY[w.id]?`<div class="box" style="border-color:var(--green2)"><h4>🧠 In everyday words</h4><p>${EASY[w.id]}</p></div>`:''}
+    <div class="box"><h4>🟢 Simple Explanation</h4><p>${w.simple}</p></div>
+    <details class="box"><summary style="cursor:pointer;color:var(--blue2);font-weight:600;">🔬 Technical definition (for advanced learners)</summary><p>${w.scientific}</p></details>
+    ${w.cat==='diagnosis'?'<p class="note">⚠️ For learning only, not medical advice. Please see a qualified doctor for any health concern.</p>':''}
+    <div class="box"><h4>🏛️ Check with trusted organisations</h4><p class="tag">Official science and health bodies like WHO, NIH and ICMR. <a href="#sources" style="color:var(--green2);">See all trusted sources →</a></p></div>
+    <div class="box"><h4>💡 Example</h4><p>${w.example}</p></div>
+    <div class="box"><h4>🌍 Biology in Real Life</h4><p>${w.real}</p></div>
+    <div class="box"><h4>🎥 Watch & Learn</h4>
+      <div class="videolinks">
+        <a href="${ytLink(w.name+' English')}" target="_blank" rel="noopener">▶ English</a>
+        <a href="${ytLink(w.name+' Hindi जीव विज्ञान')}" target="_blank" rel="noopener">▶ हिंदी (Hindi)</a>
+        <a href="${ytLink(w.name+' Marathi जीवशास्त्र')}" target="_blank" rel="noopener">▶ मराठी (Marathi)</a>
+      </div>
+    </div>
+    <div class="box"><h4>🈂️ Term in other languages</h4><p>Hindi: <b>${w.hi}</b> &nbsp;|&nbsp; Marathi: <b>${w.mr}</b></p></div>
+    <div class="box"><h4>🔗 Related Words</h4><p>${w.related.map(r=>`<a href="#word/${r}" style="margin-right:10px;color:var(--green2);">${byId(r)?byId(r).name:r}</a>`).join('')}</p></div>
+
+    <button class="btn primary" onclick="go('quiz/${w.id}')">📝 Take a quiz on ${w.name}</button>
+  </div>`;
+}
+
+function viewCompare(){
+  const opts = WORDS.map(w=>`<option value="${w.id}">${w.name}</option>`).join('');
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">⚖️ Compare Terms</h2>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+    <select id="cmp1">${opts}</select> <span>vs</span>
+    <select id="cmp2">${opts.replace('value="dna"','value="rna" selected')}</select>
+    <button class="btn primary" onclick="doCompare()">Compare</button>
+  </div>
+  <div id="cmpResult"></div>`;
+}
+function doCompare(){
+  const a = byId(document.getElementById('cmp1').value);
+  const b = byId(document.getElementById('cmp2').value);
+  document.getElementById('cmpResult').innerHTML = `
+  <table class="comparetbl">
+    <tr><th></th><th>${a.name}</th><th>${b.name}</th></tr>
+    <tr><td>Simple meaning</td><td>${a.simple}</td><td>${b.simple}</td></tr>
+    <tr><td>Scientific definition</td><td>${a.scientific}</td><td>${b.scientific}</td></tr>
+    <tr><td>Example</td><td>${a.example}</td><td>${b.example}</td></tr>
+    <tr><td>Difficulty</td><td>${a.diff}</td><td>${b.diff}</td></tr>
+  </table>`;
+}
+
+function shuffle(arr){return arr.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(v=>v[1]);}
+function buildQuiz(focusId){
+  let pool = focusId ? [byId(focusId), ...shuffle(WORDS.filter(w=>w.id!==focusId)).slice(0,4)] : shuffle(WORDS).slice(0,5);
+  return pool.map(w=>{
+    const distractors = shuffle(WORDS.filter(x=>x.id!==w.id)).slice(0,3).map(x=>x.simple);
+    const options = shuffle([w.simple, ...distractors]);
+    return {q:`Which is the simple meaning of "${w.name}"?`, options, answer:w.simple};
+  });
+}
+function viewQuiz(focusId){
+  window._quiz = buildQuiz(focusId);
+  window._score = 0; window._answered = 0;
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">📝 Quiz${focusId?': '+byId(focusId).name:''}</h2>
+  <div id="quizBox">${window._quiz.map((q,i)=>`
+    <div class="box" id="q${i}">
+      <div class="quizq">${i+1}. ${q.q}</div>
+      ${q.options.map(o=>`<button class="quizopt" onclick="answerQuiz(${i},this,'${o.replace(/'/g,"\\'")}')">${o}</button>`).join('')}
+    </div>`).join('')}
+  </div>
+  <div id="quizScore" class="box"></div>`;
+}
+function answerQuiz(i,btn,chosen){
+  const q = window._quiz[i];
+  const box = document.getElementById('q'+i);
+  if(box.dataset.done) return;
+  box.dataset.done='1';
+  box.querySelectorAll('.quizopt').forEach(b=>{
+    if(b.textContent===q.answer) b.classList.add('correct');
+    else if(b===btn) b.classList.add('wrong');
+    b.disabled=true;
+  });
+  window._answered++;
+  if(chosen===q.answer) window._score++;
+  if(window._answered===window._quiz.length){
+    document.getElementById('quizScore').innerHTML = `<h4>Your score: ${window._score} / ${window._quiz.length}</h4><button class="btn primary" onclick="go('quiz')">Try another quiz</button>`;
+  }
+}
+
+function viewContact(){
+  return `<span class="backlink" onclick="go('home')">← Home</span>
+  <h2 class="section">✉️ Contact / Feedback</h2>
+  <p class="tag">Have a biotechnology word you don't understand?</p>
+  <form class="feedback" onsubmit="submitFeedback(event)">
+    <label>Word</label><input id="fWord" placeholder="e.g. Epigenetics" required>
+    <label>Your name</label><input id="fName" required>
+    <label>Email</label><input id="fEmail" type="email" required>
+    <label>Suggestion / question</label><textarea id="fMsg" rows="4"></textarea>
+    <button class="btn primary" type="submit" style="margin-top:14px;">Submit</button>
+  </form>
+  <div id="fbMsg" class="note"></div>`;
+}
+function submitFeedback(e){
+  e.preventDefault();
+  try{
+    const list = JSON.parse(localStorage.getItem('biotech_feedback')||'[]');
+    list.push({word:fWord.value,name:fName.value,email:fEmail.value,msg:fMsg.value,ts:Date.now()});
+    localStorage.setItem('biotech_feedback', JSON.stringify(list));
+    document.getElementById('fbMsg').textContent = 'Thanks! Your suggestion was saved on this device.';
+    e.target.reset();
+  }catch(err){
+    document.getElementById('fbMsg').textContent = 'Could not save right now — please try again.';
+  }
+}
+
+function attachHandlers(){ /* reserved for future use */ }
+</script>
+
+
+</body></html>
